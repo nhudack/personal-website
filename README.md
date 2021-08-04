@@ -7,12 +7,8 @@
   Nick Hudack's Personal Website
 </h1>
 
-Nick Hudack's personal website, [nickhudack.com](https://nickhudack.com), built with [Gatsby](https://www.gatsbyjs.org) and hosted on [Netlify](https://www.netlify.com)
-
 <p align="center">
-  <a href="https://cara.lekoarts.de">
-    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
-  </a>
+  My personal website, [nickhudack.com](https://nickhudack.com), built with [Gatsby](https://www.gatsbyjs.org) and hosted on [Netlify](https://www.netlify.com)
 </p>
 
 ## 🛠 Features
@@ -21,7 +17,15 @@ Nick Hudack's personal website, [nickhudack.com](https://nickhudack.com), built 
 - react-spring parallax effect
 - CSS Animations on Shapes
 
-### Changing content
+## 📷 Screenshots
+
+<p align="center">
+  <a href="https://cara.lekoarts.de">
+    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
+  </a>
+</p>
+
+## ✏️ Changing content
 
 The content of this project is defined in four `.mdx` files inside the theme's `sections` folder. You can override the files `intro.mdx`, `projects.mdx`, `about.mdx` and `contact.mdx`. This starter has overridden the `intro.mdx` file as an example. Place the other files in the same `src/@lekoarts/gatsby-theme-cara/sections/` folder.
 
