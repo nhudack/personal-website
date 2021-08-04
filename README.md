@@ -7,8 +7,8 @@
   Nick Hudack's Personal Website
 </h1>
 
-<p align="center">
-  My personal website, [nickhudack.com](https://nickhudack.com), built with [Gatsby](https://www.gatsbyjs.org) and hosted on [Netlify](https://www.netlify.com)
+<align="center">
+  My personal website, <a href="https://nickhudack.com">nickhudack.com</a>, built with <a href="https://www.gatsbyjs.org">Gatsby</a> and hosted on <a href="https://www.netlify.com">Netlify</a>
 </p>
 
 ## 🛠 Features
