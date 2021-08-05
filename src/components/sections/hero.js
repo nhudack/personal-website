@@ -58,11 +58,10 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hey, I'm</h1>;
+  const one = <h3 className="numbered-heading">Hey, I'm</h3>;
   const two = <h2 className="big-heading">Nick Hudack</h2>;
-  const three = <h3 className="big-heading">I am a software engineer.</h3>;
 
-  const items = [one, two, three];
+  const items = [one, two];
 
   return (
     <StyledHeroSection>
