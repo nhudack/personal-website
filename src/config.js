@@ -7,17 +7,17 @@ module.exports = {
       url: 'https://github.com/nhudack',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/nhudack',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/NickHudack',
-    },
-    {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/nickhudack',
     },
+    //{
+    //  name: 'Instagram',
+    //  url: 'https://www.instagram.com/nhudack',
+    //},
+    //{
+    //  name: 'Twitter',
+    //  url: 'https://twitter.com/NickHudack',
+    //},
   ],
 
   navLinks: [
