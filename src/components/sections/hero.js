@@ -61,18 +61,8 @@ const Hero = () => {
   const one = <h1>Hey, I'm</h1>;
   const two = <h2 className="big-heading">Nick Hudack</h2>;
   const three = <h3 className="big-heading">I am a software engineer.</h3>;
-  const four = (
-    <p>
-      I'm a software engineer specializing in building (and occasionally designing) exceptional
-      digital experiences. Currently, I'm focused on building accessible, human-centered products at{' '}
-      <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-        Upstatement
-      </a>
-      .
-    </p>
-  );
 
-  const items = [one, two, three, four];
+  const items = [one, two, three];
 
   return (
     <StyledHeroSection>
