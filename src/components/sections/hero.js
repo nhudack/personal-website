@@ -58,8 +58,8 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Nick Hudack.</h2>;
+  const one = <h1>Hey, I'm</h1>;
+  const two = <h2 className="big-heading">Nick Hudack</h2>;
   const three = <h3 className="big-heading">I am a software engineer.</h3>;
   const four = (
     <p>
@@ -71,13 +71,8 @@ const Hero = () => {
       .
     </p>
   );
-  const five = (
-    <a href={`mailto:${email}`} className="email-link">
-      Get In Touch
-    </a>
-  );
 
-  const items = [one, two, three, four, five];
+  const items = [one, two, three, four];
 
   return (
     <StyledHeroSection>
