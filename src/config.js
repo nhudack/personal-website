@@ -18,10 +18,6 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/nickhudack',
     },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/nhudack',
-    },
   ],
 
   navLinks: [
