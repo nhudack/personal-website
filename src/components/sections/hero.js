@@ -11,10 +11,6 @@ const StyledHeroSection = styled.section`
   min-height: 100vh;
   padding: 0;
 
-  @media (max-width: 480px) and (min-height: 700px) {
-    padding-bottom: 10vh;
-  }
-
   h1 {
     margin: 0 0 30px 4px;
     color: var(--green);
@@ -36,11 +32,6 @@ const StyledHeroSection = styled.section`
   p {
     margin: 20px 0 0;
     max-width: 540px;
-  }
-
-  .email-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
   }
 `;
 
