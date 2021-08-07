@@ -61,7 +61,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--light-slate);
+    background-color: var(--lightest-slate);
 
     &:hover,
     &:focus {
