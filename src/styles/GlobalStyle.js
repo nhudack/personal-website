@@ -32,17 +32,17 @@ const GlobalStyle = createGlobalStyle`
   /* Scrollbar Styles */
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--dark-slate) var(--navy);
+    scrollbar-color: var(--dark-slate) var(--white);
   }
   body::-webkit-scrollbar {
     width: 12px;
   }
   body::-webkit-scrollbar-track {
-    background: var(--navy);
+    background: var(--white);
   }
   body::-webkit-scrollbar-thumb {
     background-color: var(--dark-slate);
-    border: 3px solid var(--navy);
+    border: 3px solid var(--white);
     border-radius: 10px;
   }
 
@@ -53,7 +53,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--navy);
+    background-color: var(--white);
     color: var(--slate);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);
