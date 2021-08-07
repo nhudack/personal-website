@@ -164,7 +164,6 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     position: relative;
     margin: 10px 0 40px;
-    text-align: center;
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
@@ -176,7 +175,7 @@ const GlobalStyle = createGlobalStyle`
       top: -5px;
       width: 300px;
       height: 1px;
-      margin-left: 20px;
+      margin-right: 20px;
       background-color: var(--lightest-navy);
 
       @media (max-width: 1080px) {
