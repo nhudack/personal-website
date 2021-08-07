@@ -144,7 +144,8 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     margin: 0 0 10px 0;
     font-weight: 600;
-    color: var(--lightest-slate);
+    color: var(--dark-slate);
+    /* color: var(--lightest-slate); */
     line-height: 1.1;
   }
 
@@ -163,6 +164,7 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     position: relative;
     margin: 10px 0 40px;
+    text-align: center;
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
