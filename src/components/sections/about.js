@@ -7,6 +7,7 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
+  color: var(--lightest-navy);
 
   .inner {
     display: grid;
@@ -39,7 +40,7 @@ const StyledText = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--green);
+        color: var(--navy);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -61,7 +62,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--lightest-slate);
+    background-color: var(--lightest-navy);
 
     &:hover,
     &:focus {
