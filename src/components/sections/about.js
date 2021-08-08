@@ -40,7 +40,7 @@ const StyledText = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--blue);
+        color: var(--green);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -62,11 +62,9 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--blue);
 
     &:hover,
     &:focus {
-      background: transparent;
       outline: 0;
 
       .img {
