@@ -17,8 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  /*background-color: rgba(10, 25, 47, 0.85);*/
-  background-color: var(--lightest-navy);
+  background-color: rgba(10, 25, 47, 0.85);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -105,7 +104,7 @@ const StyledLinks = styled.div`
       margin: 0 5px;
       position: relative;
       counter-increment: item 1;
-      font-size: var(--fz-lg);
+      font-size: var(--fz-xl);
 
       a {
         padding: 10px;
