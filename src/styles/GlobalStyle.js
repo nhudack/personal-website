@@ -350,7 +350,7 @@ const GlobalStyle = createGlobalStyle`
     &:focus,
     &:active {
       background-color: var(--green);
-      color: var(--navy);
+      color: var(--lightest-navy);
       top: 0;
       left: 0;
       width: auto;
