@@ -68,7 +68,7 @@ const StyledPic = styled.div`
       outline: 0;
 
       .img {
-        filter: none;
+        /*filter: none;*/
         mix-blend-mode: normal;
       }
     }
@@ -77,7 +77,7 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
+      /*filter: grayscale(100%) contrast(1);*/
       transition: var(--transition);
     }
   }
