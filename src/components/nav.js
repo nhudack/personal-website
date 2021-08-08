@@ -59,7 +59,7 @@ const StyledNav = styled.nav`
   position: relative;
   width: 100%;
   color: var(--lightest-slate);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   counter-reset: item 0;
   z-index: 12;
 
@@ -105,7 +105,7 @@ const StyledLinks = styled.div`
       margin: 0 5px;
       position: relative;
       counter-increment: item 1;
-      font-size: var(--fz-heading);
+      font-size: var(--fz-lg);
 
       a {
         padding: 10px;
