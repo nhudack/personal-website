@@ -111,7 +111,7 @@ const StyledSidebar = styled.aside`
     width: 100%;
     flex-direction: column;
     color: var(--lightest-slate);
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     text-align: center;
   }
 
@@ -125,7 +125,7 @@ const StyledSidebar = styled.aside`
       position: relative;
       margin: 0 auto 20px;
       counter-increment: item 1;
-      font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
+      font-size: clamp(var(--fz-md), 4vw, var(--fz-xl));
 
       @media (max-width: 600px) {
         margin: 0 auto 10px;
