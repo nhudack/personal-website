@@ -144,8 +144,8 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     margin: 0 0 10px 0;
     font-weight: 600;
+    text-align: center;
     color: var(--light-navy);
-    /* color: var(--lightest-slate); */
     line-height: 1.1;
   }
 
