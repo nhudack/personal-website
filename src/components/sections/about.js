@@ -7,6 +7,7 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
+  text-align: center;
   color: var(--dark-slate);
 
   .inner {
