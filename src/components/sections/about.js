@@ -68,7 +68,6 @@ const StyledPic = styled.div`
       outline: 0;
 
       .img {
-        /*filter: none;*/
         mix-blend-mode: normal;
       }
     }
@@ -77,7 +76,6 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      /*filter: grayscale(100%) contrast(1);*/
       transition: var(--transition);
     }
   }
@@ -106,7 +104,7 @@ const About = () => {
           <div>
             <p>
               My name is Nick Hudack and I am a passionate and motivated software developer. I
-              am currently enrolled in the Computer Science program at Virginia Tech and have
+              am currently enrolled in the computer science program at Virginia Tech and have
               plans to graduate in May 2022.
             </p>
 
