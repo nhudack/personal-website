@@ -125,7 +125,7 @@ const StyledSidebar = styled.aside`
       position: relative;
       margin: 0 auto 20px;
       counter-increment: item 1;
-      font-size: clamp(var(--fz-md), 4vw, var(--fz-xl));
+      font-size: clamp(var(--fz-lg), 4vw, var(--fz-xxl));
 
       @media (max-width: 600px) {
         margin: 0 auto 10px;
