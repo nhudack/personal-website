@@ -96,7 +96,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'React', 'Eleventy', 'Vue', 'Node.js', 'WordPress'];
+  const skills = ['Java', 'Python', 'C', 'C++', 'Kotlin'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -106,24 +106,13 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hey! My name is Nick and I am a novice software developer. I am currently enrolled
-              in the Computer Science program at Virginia Tech and have plans to graduate in May
-              2022.
+              My name is Nick Hudack and I am a passionate and motivated software developer. I
+              am currently enrolled in the Computer Science program at Virginia Tech and have
+              plans to graduate in May 2022.
             </p>
 
             <p>
-              Fast-forward to today, and I've had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              So far, I have the most experience working with:
+              Thus far, I have the most experience working with:
             </p>
           </div>
 

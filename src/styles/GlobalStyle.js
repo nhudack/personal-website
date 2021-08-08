@@ -145,7 +145,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 0 10px 0;
     font-weight: 600;
     color: var(--navy);
-    /* color: var(--lightest-slate); */
+    /* color: var(--lightest-navy); */
     line-height: 1.1;
   }
 
