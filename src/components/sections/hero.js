@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { navDelay, loaderDelay } from '@utils';
+import { srConfig } from '@config';
+import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
@@ -43,6 +44,8 @@ const Hero = () => {
     if (prefersReducedMotion) {
       return;
     }
+
+    sr.reveal(revealContainer.current, srConfig());
   }, []);
 
   const one = <h2 className="numbered-heading">Hey, I'm</h2>;
@@ -52,22 +55,8 @@ const Hero = () => {
 
   return (
     <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
-          ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={250}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
-            ))}
-        </TransitionGroup>
-      )}
+      <h2 className="numbered-heading">Hey, I'm</h2>;
+      <h2 className="big-heading">Nick Hudack</h2>;
     </StyledHeroSection>
   );
 };
