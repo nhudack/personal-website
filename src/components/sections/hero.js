@@ -37,7 +37,7 @@ const StyledHeroSection = styled.section`
 `;
 
 const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
+  const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -48,13 +48,8 @@ const Hero = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const one = <h2 className="numbered-heading">Hey, I'm</h2>;
-  const two = <h2 className="big-heading">Nick Hudack</h2>;
-
-  const items = [one, two];
-
   return (
-    <StyledHeroSection>
+    <StyledHeroSection ref={revealContainer}>
       <h2 className="numbered-heading">Hey, I'm</h2>;
       <h2 className="big-heading">Nick Hudack</h2>;
     </StyledHeroSection>
