@@ -40,7 +40,7 @@ const StyledContactSection = styled.section`
 
   .resume-button {
     ${({ theme }) => theme.mixins.smallButton};
-    margin-top: 20px;
+    margin-top: 10px;
   }
 `;
 
