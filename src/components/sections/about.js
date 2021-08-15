@@ -37,10 +37,10 @@ const StyledText = styled.div`
       font-size: var(--fz-xs);
 
       &:before {
-        content: '▹';
+        content: '✔️';
         position: absolute;
         left: 0;
-        color: var(--lightest-navy);
+        color: var(--green);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
