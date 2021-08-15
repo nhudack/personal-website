@@ -65,12 +65,12 @@ const Layout = ({ children, location }) => {
           </a>
 
           <StyledContent>
-            <Nav isHome={isHome} />
+              <Nav isHome={isHome} />
 
-            <div id="content">
-              {children}
-            </div>
-          </StyledContent>
+              <div id="content">
+                {children}
+              </div>
+            </StyledContent>
         </ThemeProvider>
       </div>
     </>
