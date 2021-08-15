@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { srConfig, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { Icon } from '@components/icons';
+import { socialMedia } from '@config';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -42,6 +44,29 @@ const StyledContactSection = styled.section`
   }
 `;
 
+const StyledSocialLinks = styled.div`
+  display: block;
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto 10px;
+  color: var(--dark-slate);
+
+  ul {
+    ${({ theme }) => theme.mixins.flexBetween};
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+      padding: 10px;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+`;
+
 const Contact = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -67,6 +92,19 @@ const Contact = () => {
       <a className="email-link" href={`mailto:${email}`}>
         Email
       </a>
+
+      <StyledSocialLinks>
+        <ul>
+          {socialMedia &&
+            socialMedia.map(({ name, url }, i) => (
+              <li key={i}>
+                <a href={url} aria-label={name}>
+                  <Icon name={name} />
+                </a>
+              </li>
+            ))}
+        </ul>
+      </StyledSocialLinks>
     </StyledContactSection>
   );
 };
