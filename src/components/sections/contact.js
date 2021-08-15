@@ -83,10 +83,10 @@ const Contact = () => {
     <StyledContactSection id="contact" ref={revealContainer}>
       <h2 className="numbered-heading">Contact Me</h2>
 
-      <h2 className="title">Contact Me</h2>
+      <h2 className="title">Let's connect!</h2>
 
       <p>
-        Let's connect! You can find me on almost any social media.
+        You can find me on almost any social media.
       </p>
 
       <StyledSocialLinks>

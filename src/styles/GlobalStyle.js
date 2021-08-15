@@ -161,6 +161,8 @@ const GlobalStyle = createGlobalStyle`
   .numbered-heading {
     display: flex;
     align-items: center;
+    text-align: center;
+    position: relative;
     margin: 10px 0 40px;
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
