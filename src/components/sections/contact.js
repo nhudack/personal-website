@@ -89,10 +89,6 @@ const Contact = () => {
         Let's connect! You can find me on almost any social media.
       </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
-        Email
-      </a>
-
       <StyledSocialLinks>
         <ul>
           {socialMedia &&
@@ -105,6 +101,10 @@ const Contact = () => {
             ))}
         </ul>
       </StyledSocialLinks>
+
+      <a className="email-link" href={`mailto:${email}`}>
+        Email
+      </a>
     </StyledContactSection>
   );
 };
