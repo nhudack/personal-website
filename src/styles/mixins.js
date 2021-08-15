@@ -5,7 +5,7 @@ const button = css`
   background-color: transparent;
   border: 1px solid var(--green);
   border-radius: var(--border-radius);
-  font-size: var(--fz-sm);
+  font-size: var(--fz-md);
   font-family: var(--font-sans);
   line-height: 1;
   text-decoration: none;
@@ -116,7 +116,7 @@ const mixins = {
     border: 1px solid var(--green);
     border-radius: var(--border-radius);
     padding: 1.25rem 1.75rem;
-    font-size: var(--fz-md);
+    font-size: var(--fz-lg);
     font-family: var(--font-sans);
     line-height: 1;
     text-decoration: none;

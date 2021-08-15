@@ -39,7 +39,7 @@ const StyledContactSection = styled.section`
   }
 
   .resume-button {
-    ${({ theme }) => theme.mixins.smallButton};
+    ${({ theme }) => theme.mixins.button};
     margin-top: 10px;
   }
 `;
