@@ -38,6 +38,12 @@ const StyledContactSection = styled.section`
     font-size: clamp(40px, 5vw, 60px);
   }
 
+  .resume-button {
+    ${({ theme }) => theme.mixins.smallButton};
+    margin-left: 15px;
+    font-size: var(--fz-xs);
+  }
+
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
