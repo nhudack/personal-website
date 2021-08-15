@@ -10,7 +10,6 @@ const StyledContactSection = styled.section`
   max-width: 600px;
   margin: 0 auto 100px;
   text-align: center;
-  min-height: 100vh;
   color: var(--dark-slate);
 
   @media (max-width: 768px) {
@@ -61,8 +60,8 @@ const StyledSocialLinks = styled.div`
     a {
       padding: 10px;
       svg {
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
       }
     }
   }
