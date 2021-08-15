@@ -3,7 +3,7 @@ export const hex2rgba = (hex, alpha = 1) => {
   return `rgba(${r},${g},${b},${alpha})`;
 };
 
-export const navDelay = 0;
+export const navDelay = 1000;
 export const loaderDelay = 0;
 
 export const KEY_CODES = {
