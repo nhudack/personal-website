@@ -79,6 +79,12 @@ const Contact = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
+  const ResumeLink = (
+    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      Resume
+    </a>
+  );
+
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
       <h2 className="numbered-heading">Contact Me</h2>
@@ -101,6 +107,8 @@ const Contact = () => {
             ))}
         </ul>
       </StyledSocialLinks>
+
+      {ResumeLink}
 
       <a className="email-link" href={`mailto:${email}`}>
         Email
