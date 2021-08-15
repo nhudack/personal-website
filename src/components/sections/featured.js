@@ -246,13 +246,11 @@ const StyledProject = styled.li`
     a {
       width: 100%;
       height: 100%;
-      background-color: var(--green);
       border-radius: var(--border-radius);
       vertical-align: middle;
 
       &:hover,
       &:focus {
-        background: transparent;
         outline: 0;
 
         &:before,
@@ -260,21 +258,6 @@ const StyledProject = styled.li`
           background: transparent;
           filter: none;
         }
-      }
-
-      &:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 3;
-        transition: var(--transition);
-        background-color: var(--navy);
-        mix-blend-mode: screen;
       }
     }
 
