@@ -43,9 +43,6 @@ const Hero = () => {
     if (prefersReducedMotion) {
       return;
     }
-
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
   }, []);
 
   const one = <h2 className="numbered-heading">Hey, I'm</h2>;
@@ -65,7 +62,7 @@ const Hero = () => {
         <TransitionGroup component={null}>
           {isMounted &&
             items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
+              <CSSTransition key={i} classNames="fadeup" timeout={250}>
                 <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
               </CSSTransition>
             ))}
