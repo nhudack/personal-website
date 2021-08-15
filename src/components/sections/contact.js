@@ -39,8 +39,14 @@ const StyledContactSection = styled.section`
   }
 
   .resume-button {
-    ${({ theme }) => theme.mixins.button};
+    ${({ theme }) => theme.mixins.smallButton};
     margin-top: 10px;
+  }
+
+  .email-link {
+    ${({ theme }) => theme.mixins.bigButton};
+    margin-top: 10px;
+    margin-left: 10px;
   }
 `;
 
@@ -92,7 +98,7 @@ const Contact = () => {
       <h2 className="title">Let's connect!</h2>
 
       <p>
-        You can find me on almost any social media.
+        You can find me on almost any social media, or <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">download my resume here</a>.
       </p>
 
       <StyledSocialLinks>
@@ -109,6 +115,10 @@ const Contact = () => {
       </StyledSocialLinks>
 
       {ResumeLink}
+
+      <a className="email-link" href={`mailto:${email}`}>
+        Resume
+      </a>
     </StyledContactSection>
   );
 };
