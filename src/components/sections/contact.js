@@ -48,7 +48,7 @@ const StyledSocialLinks = styled.div`
   display: block;
   width: 100%;
   max-width: 270px;
-  margin: 0 auto 10px;
+  margin: 10px auto 10px;
   color: var(--dark-slate);
 
   ul {
