@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
