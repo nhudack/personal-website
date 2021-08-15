@@ -41,7 +41,6 @@ const StyledContactSection = styled.section`
   .resume-button {
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
-    font-size: var(--fz-xs);
   }
 
   .email-link {
@@ -117,7 +116,7 @@ const Contact = () => {
       {ResumeLink}
 
       <a className="email-link" href={`mailto:${email}`}>
-        Email
+        Resume
       </a>
     </StyledContactSection>
   );
