@@ -137,18 +137,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1,
+  h2,
   h3,
   h4,
   h5,
   h6 {
     margin: 0 0 10px 0;
-    font-weight: 600;
-    color: var(--light-navy);
-    line-height: 1.1;
-  }
-
-  h2 {
-    margin: auto auto 10px 0;
     font-weight: 600;
     color: var(--light-navy);
     line-height: 1.1;
@@ -168,7 +162,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     position: relative;
-    margin: 10px auto 40px;
+    margin: 10px 0 40px;
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;

@@ -10,6 +10,7 @@ const StyledHeroSection = styled.section`
   align-items: center;
   min-height: 100vh;
   padding: 0;
+  background-image: url(../../images/me.jpg);
 `;
 
 const Hero = () => {
