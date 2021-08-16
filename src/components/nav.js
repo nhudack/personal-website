@@ -101,13 +101,13 @@ const StyledLinks = styled.div`
     list-style: none;
 
     li {
-      margin: 0 5px;
+      margin: 0 20px;
       position: relative;
       counter-increment: item 1;
       font-size: var(--fz-xl);
 
       a {
-        padding: 20px;
+        padding: 10px;
       }
     }
   }
