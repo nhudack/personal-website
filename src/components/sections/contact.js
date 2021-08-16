@@ -92,12 +92,12 @@ const Contact = () => {
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading">Contact me</h2>
+      <h2 className="numbered-heading">Contact Me</h2>
 
       <h2 className="title">Let's connect!</h2>
 
       <p>
-        You can find me on almost any social media, or <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">download my resume here</a>.
+        You can find me on almost any social media. However, the best way to contact me is via email.
       </p>
 
       <StyledSocialLinks>

@@ -17,7 +17,7 @@ const button = css`
   &:focus,
   &:active {
     color: var(--light-navy);
-    background-color: var(--navy-tint);
+    background-color: var(--green-tint);
     outline: none;
   }
   &:after {
