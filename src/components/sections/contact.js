@@ -40,13 +40,12 @@ const StyledContactSection = styled.section`
 
   .resume-button {
     ${({ theme }) => theme.mixins.button};
-    margin-top: 10px;
+    margin: 10px;
   }
 
   .email-link {
     ${({ theme }) => theme.mixins.button};
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px;
   }
 `;
 
