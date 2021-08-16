@@ -11,7 +11,7 @@ const StyledAboutSection = styled.section`
 
   .inner {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 3fr;
     grid-gap: 50px;
 
     @media (max-width: 768px) {
@@ -112,7 +112,7 @@ const About = () => {
             />
           </div>
         </StyledPic>
-        
+
         <StyledText>
           <div>
             <p>
