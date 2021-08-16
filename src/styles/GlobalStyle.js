@@ -168,6 +168,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: center;
     text-align: center;
     position: relative;
     margin: 10px auto 40px;
