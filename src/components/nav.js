@@ -101,7 +101,7 @@ const StyledLinks = styled.div`
     list-style: none;
 
     li {
-      margin: 0 20px;
+      margin: 0 40px;
       position: relative;
       counter-increment: item 1;
       font-size: var(--fz-xl);
