@@ -1,8 +1,8 @@
 import { css } from 'styled-components';
 
 const button = css`
-  color: var(--light-navy);
-  background-color: transparent;
+  color: var(--white);
+  background-color: var(--light-navy);
   border: 1px solid var(--light-navy);
   border-radius: var(--border-radius);
   font-size: var(--fz-lg);
@@ -16,6 +16,7 @@ const button = css`
   &:hover,
   &:focus,
   &:active {
+    color: var(--light-navy);
     background-color: var(--green-tint);
     outline: none;
   }
