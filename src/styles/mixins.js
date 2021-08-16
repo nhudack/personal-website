@@ -1,17 +1,17 @@
 import { css } from 'styled-components';
 
 const button = css`
-  color: var(--green);
+  color: var(--navy);
   background-color: transparent;
-  border: 1px solid var(--green);
+  border: 1px solid var(--navy);
   border-radius: var(--border-radius);
-  font-size: var(--fz-md);
+  font-size: var(--fz-lg);
   font-family: var(--font-sans);
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
-  padding: 1.25rem 1.75rem;
+  padding: 1rem 1.5rem;
 
   &:hover,
   &:focus,
