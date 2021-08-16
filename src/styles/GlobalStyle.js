@@ -169,6 +169,7 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     position: relative;
     margin: 10px auto 40px;
+    width: auto;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
 
