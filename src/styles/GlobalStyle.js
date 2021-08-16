@@ -168,9 +168,9 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     text-align: center;
-    position: absolute;
+    position: relative;
     margin: 10px auto 40px;
-    width: auto;
+    width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
 
