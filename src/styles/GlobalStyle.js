@@ -167,6 +167,7 @@ const GlobalStyle = createGlobalStyle`
   .numbered-heading {
     display: flex;
     align-items: center;
+    text-align: center;
     position: relative;
     margin: 10px auto 40px;
     width: auto;
