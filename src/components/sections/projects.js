@@ -193,6 +193,7 @@ const Projects = () => {
   const revealTitle = useRef(null);
   const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
+  const revealButton = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -301,7 +302,7 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
+      <button className="more-button" onClick={() => setShowMore(!showMore)} ref={revealTitle}>
         Show {showMore ? 'Less' : 'More'}
       </button>
     </StyledProjectsSection>
