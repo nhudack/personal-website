@@ -107,7 +107,7 @@ const StyledLinks = styled.div`
       font-size: var(--fz-xl);
 
       a {
-        padding: 10px;
+        padding: 20px;
       }
     }
   }

@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '1'
 title: 'Personal Website'
 cover: './image.png'
 github: 'https://github.com/nhudack/personal-website'
