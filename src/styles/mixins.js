@@ -16,7 +16,7 @@ const button = css`
   &:hover,
   &:focus,
   &:active {
-    color: var(--light-navy);
+    color: var(--green);
     background-color: var(--green-tint);
     outline: none;
   }
