@@ -23,7 +23,7 @@ const StyledSubtitle = styled.h2`
   font-weight: 400;
 `;
 const StyledHomeButton = styled(Link)`
-  ${({ theme }) => theme.mixins.bigButton};
+  ${({ theme }) => theme.mixins.button};
   margin-top: 40px;
 `;
 
