@@ -10,6 +10,15 @@ const StyledHomeSection = styled.section`
   align-items: center;
   min-height: 100vh;
   padding: 0;
+
+  .hero-image {
+    background-image: url("/src/images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+  }
 `;
 
 const Home = () => {
@@ -26,8 +35,10 @@ const Home = () => {
 
   return (
     <StyledHomeSection ref={revealContainer}>
-      <h2 className="numbered-heading">Hey, I'm</h2>
-      <h2 className="big-heading">Nick Hudack</h2>
+      <div className="hero-image">
+        <h2 className="numbered-heading">Hey, I'm</h2>
+        <h2 className="big-heading">Nick Hudack</h2>
+      </div>
     </StyledHomeSection>
   );
 };
