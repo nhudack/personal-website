@@ -14,10 +14,9 @@ const button = css`
   padding: 1rem 1.5rem;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: var(--light-navy);
-    background-color: var(--green-tint);
+    background-color: var(--white);
     outline: none;
   }
   &:after {
