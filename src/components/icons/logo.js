@@ -4,7 +4,7 @@ const IconLogo = () => (
   <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1300 1300">
     <title>Logo</title>
     <g transform="translate(0.000000,1300.000000) scale(0.100000,-0.100000)"
-      fill="#000000" stroke="currentColor">
+      fill="currentColor" stroke="none">
       <path d="M11425 10973 c-39 -74 -143 -217 -172 -235 -12 -7 -86 -76 -165 -154
         -93 -92 -166 -154 -208 -178 -36 -21 -76 -48 -90 -61 -23 -21 -278 -155 -295
         -155 -4 0 -51 -20 -104 -44 -133 -60 -488 -199 -591 -230 -47 -14 -141 -43
