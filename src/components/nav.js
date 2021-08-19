@@ -149,11 +149,25 @@ const Nav = ({ isHome }) => {
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <IconLogo />
+          <StaticImage
+              className="img"
+              src="../../images/logo.png"
+              width={100}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Logo"
+            />
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <IconLogo />
+          <StaticImage
+              className="img"
+              src="../../images/logo.png"
+              width={100}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Logo"
+            />
         </Link>
       )}
     </div>
