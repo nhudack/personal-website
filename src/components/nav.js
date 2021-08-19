@@ -63,30 +63,49 @@ const StyledNav = styled.nav`
   counter-reset: item 0;
   z-index: 12;
 
+  .wrapper {
+    ${({ theme }) => theme.mixins.boxShadow};
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius);
+
+    &:hover,
+    &:focus {
+      outline: 0;
+
+      .img {
+        mix-blend-mode: normal;
+      }
+    }
+
+    .img {
+      position: relative;
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      transition: var(--transition);
+    }
+  }
+
   .logo {
     ${({ theme }) => theme.mixins.flexCenter};
 
     a {
-      display: block;
-      position: relative;
+      color: var(--green);
       width: 42px;
       height: 42px;
-      border-radius: var(--border-radius);
 
       &:hover,
       &:focus {
-        outline: 0;
-
-        .img {
-          mix-blend-mode: normal;
+        svg {
+          fill: var(--green-tint);
         }
       }
 
-      .img {
-        position: relative;
-        border-radius: var(--border-radius);
-        mix-blend-mode: multiply;
+      svg {
+        fill: none;
         transition: var(--transition);
+        user-select: none;
       }
     }
   }
@@ -153,27 +172,23 @@ const Nav = ({ isHome }) => {
   const Logo = (
     <div className="logo" tabIndex="-1">
       {isHome ? (
-        <a href="/" aria-label="home">
-          <StaticImage
-            className="img"
-            src="../../images/logo.png"
-            width={100}
-            quality={95}
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            alt="Logo"
-          />
-        </a>
+        <StaticImage
+          className="img"
+          src="../../images/logo.png"
+          width={500}
+          quality={95}
+          formats={['AUTO', 'WEBP', 'AVIF']}
+          alt="Logo"
+        />
       ) : (
-        <Link to="/" aria-label="home">
-          <StaticImage
-            className="img"
-            src="../../images/logo.png"
-            width={100}
-            quality={95}
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            alt="Logo"
-          />
-        </Link>
+        <StaticImage
+          className="img"
+          src="../../images/logo.png"
+          width={500}
+          quality={95}
+          formats={['AUTO', 'WEBP', 'AVIF']}
+          alt="Logo"
+        />
       )}
     </div>
   );
