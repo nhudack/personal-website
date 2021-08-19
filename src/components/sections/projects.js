@@ -16,14 +16,6 @@ const StyledProjectsSection = styled.section`
     font-size: clamp(24px, 5vw, var(--fz-heading));
   }
 
-  .archive-link {
-    font-family: var(--font-mono);
-    font-size: var(--fz-sm);
-    &:after {
-      bottom: 0.1em;
-    }
-  }
-
   .projects-grid {
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
@@ -191,7 +183,6 @@ const Projects = () => {
 
   const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
-  const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
   const revealButton = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -202,7 +193,7 @@ const Projects = () => {
     }
 
     sr.reveal(revealTitle.current, srConfig());
-    sr.reveal(revealArchiveLink.current, srConfig());
+    sr.reveal(revealButton.current, srConfig());
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
@@ -267,10 +258,6 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Projects</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </Link>
-
       <ul className="projects-grid">
         {prefersReducedMotion ? (
           <>
@@ -302,7 +289,7 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)} ref={revealTitle}>
+      <button className="more-button" onClick={() => setShowMore(!showMore)} ref={revealButton}>
         Show {showMore ? 'Less' : 'More'}
       </button>
     </StyledProjectsSection>
