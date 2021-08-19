@@ -172,23 +172,13 @@ const Nav = ({ isHome }) => {
   const Logo = (
     <div className="logo" tabIndex="-1">
       {isHome ? (
-        <StaticImage
-          className="img"
-          src="../../images/logo.png"
-          width={500}
-          quality={95}
-          formats={['AUTO', 'WEBP', 'AVIF']}
-          alt="Logo"
-        />
+        <a href="/" aria-label="home">
+          <IconLogo />
+        </a>
       ) : (
-        <StaticImage
-          className="img"
-          src="../../images/logo.png"
-          width={500}
-          quality={95}
-          formats={['AUTO', 'WEBP', 'AVIF']}
-          alt="Logo"
-        />
+        <Link to="/" aria-label="home">
+          <IconLogo />
+        </Link>
       )}
     </div>
   );
