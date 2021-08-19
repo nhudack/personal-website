@@ -29,23 +29,6 @@ const GlobalStyle = createGlobalStyle`
     outline-offset: 3px;
   }
 
-  /* Scrollbar Styles */
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--light-navy) var(--white);
-  }
-  body::-webkit-scrollbar {
-    width: 12px;
-  }
-  body::-webkit-scrollbar-track {
-    background: var(--white);
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--light-navy);
-    border: 3px solid var(--white);
-    border-radius: 10px;
-  }
-
   body {
     margin: 0;
     width: 100%;
