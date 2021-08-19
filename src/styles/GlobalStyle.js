@@ -42,12 +42,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: var(--fz-xl);
     line-height: 1.3;
 
-    background-image: url("../../images/background.jpg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
     @media (max-width: 480px) {
       font-size: var(--fz-lg);
     }
