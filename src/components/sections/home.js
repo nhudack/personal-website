@@ -11,7 +11,7 @@ const StyledHomeSection = styled.section`
   min-height: 100vh;
   padding: 0;
 
-  background-image: url("/images/background.png");
+  background-image: url("/src/images/background.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
