@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: var(--fz-xl);
     line-height: 1.3;
 
-    background-image: url("../../images/me.jpg");
+    background-image: url("../../images/background.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
