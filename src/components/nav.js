@@ -63,30 +63,6 @@ const StyledNav = styled.nav`
   counter-reset: item 0;
   z-index: 12;
 
-  .wrapper {
-    ${({ theme }) => theme.mixins.boxShadow};
-    display: block;
-    position: relative;
-    width: 100%;
-    border-radius: var(--border-radius);
-
-    &:hover,
-    &:focus {
-      outline: 0;
-
-      .img {
-        mix-blend-mode: normal;
-      }
-    }
-
-    .img {
-      position: relative;
-      border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      transition: var(--transition);
-    }
-  }
-
   .logo {
     ${({ theme }) => theme.mixins.flexCenter};
 
