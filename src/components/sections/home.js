@@ -10,12 +10,6 @@ const StyledHomeSection = styled.section`
   align-items: center;
   min-height: 100vh;
   padding: 0;
-
-  background-image: url("/src/images/background.png");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const Home = () => {
