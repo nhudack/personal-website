@@ -2,7 +2,6 @@ export { default as Head } from './head';
 export { default as Layout } from './layout';
 export { default as Nav } from './nav';
 export { default as Menu } from './menu';
-export { default as Side } from './side';
 export { default as Home } from './sections/home';
 export { default as About } from './sections/about';
 //export { default as Experience } from './sections/experience';
