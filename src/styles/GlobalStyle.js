@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   /* Scrollbar Styles */
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--navy) var(--white);
+    scrollbar-color: var(--light-navy) var(--white);
   }
   body::-webkit-scrollbar {
     width: 12px;
@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
     background: var(--white);
   }
   body::-webkit-scrollbar-thumb {
-    background-color: var(--navy);
+    background-color: var(--light-navy);
     border: 3px solid var(--white);
     border-radius: 10px;
   }
