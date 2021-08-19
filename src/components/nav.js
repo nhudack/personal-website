@@ -74,12 +74,12 @@ const StyledNav = styled.nav`
       &:hover,
       &:focus {
         svg {
-          fill: var(--green-tint);
+          fill: var(--green);
         }
       }
 
       svg {
-        fill: none;
+        fill: var(--white);
         transition: var(--transition);
         user-select: none;
       }
