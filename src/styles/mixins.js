@@ -14,7 +14,8 @@ const button = css`
   padding: 1rem 1.5rem;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: var(--light-navy);
     background-color: var(--white);
     outline: none;
@@ -153,7 +154,7 @@ const mixins = {
       padding-left: 30px;
       margin-bottom: 10px;
       &:before {
-        content: '▹';
+        content: '•';
         position: absolute;
         left: 0;
         color: var(--green);
