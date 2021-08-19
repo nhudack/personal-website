@@ -12,7 +12,7 @@ const StyledHomeSection = styled.section`
   padding: 0;
 
   .hero-image {
-    background-image: url("/src/images/background.png");
+    background-image: url("../../background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
