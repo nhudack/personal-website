@@ -67,21 +67,26 @@ const StyledNav = styled.nav`
     ${({ theme }) => theme.mixins.flexCenter};
 
     a {
-      color: var(--green);
+      display: block;
+      position: relative;
       width: 42px;
       height: 42px;
+      border-radius: var(--border-radius);
 
       &:hover,
       &:focus {
-        svg {
-          fill: var(--green-tint);
+        outline: 0;
+
+        .img {
+          mix-blend-mode: normal;
         }
       }
 
-      svg {
-        fill: none;
+      .img {
+        position: relative;
+        border-radius: var(--border-radius);
+        mix-blend-mode: multiply;
         transition: var(--transition);
-        user-select: none;
       }
     }
   }
@@ -150,24 +155,24 @@ const Nav = ({ isHome }) => {
       {isHome ? (
         <a href="/" aria-label="home">
           <StaticImage
-              className="img"
-              src="../../images/logo.png"
-              width={100}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Logo"
-            />
+            className="img"
+            src="../../images/logo.png"
+            width={100}
+            quality={95}
+            formats={['AUTO', 'WEBP', 'AVIF']}
+            alt="Logo"
+          />
         </a>
       ) : (
         <Link to="/" aria-label="home">
           <StaticImage
-              className="img"
-              src="../../images/logo.png"
-              width={100}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Logo"
-            />
+            className="img"
+            src="../../images/logo.png"
+            width={100}
+            quality={95}
+            formats={['AUTO', 'WEBP', 'AVIF']}
+            alt="Logo"
+          />
         </Link>
       )}
     </div>
