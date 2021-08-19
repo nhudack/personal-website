@@ -4,7 +4,7 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
-const StyledHomeSection = styled.section`
+const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: center;
@@ -16,12 +16,11 @@ const StyledHomeSection = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     position: relative;
   }
 `;
 
-const Home = () => {
+const Hero = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -34,13 +33,13 @@ const Home = () => {
   }, []);
 
   return (
-    <StyledHomeSection ref={revealContainer}>
+    <StyledHeroSection ref={revealContainer}>
       <div className="hero-image">
         <h2 className="numbered-heading">Hey, I'm</h2>
         <h2 className="big-heading">Nick Hudack</h2>
       </div>
-    </StyledHomeSection>
+    </StyledHeroSection>
   );
 };
 
-export default Home;
+export default Hero;
