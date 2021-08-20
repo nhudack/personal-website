@@ -9,13 +9,12 @@ const StyledHeroBackground = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 -50px;
+  margin: 0 0;
   min-height: 100vh;
   min-width: 100vw
 
-  position:absolute;
-  left:0;
-  right:0;
+  position: relative;
+  left: calc(-50vw + 50%);
 `;
 
 const StyledHeroSection = styled.section`
