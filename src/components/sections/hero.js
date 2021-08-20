@@ -9,7 +9,6 @@ const StyledHeroBackground = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: rgba(0, 0, 0, 0.7);
   min-width: 100vw;
   min-height: 100vh;
   position: relative;
