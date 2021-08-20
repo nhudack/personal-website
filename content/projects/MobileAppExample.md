@@ -12,3 +12,5 @@ tech:
 company: 'Apple'
 showInProjects: false
 ---
+
+Project description goes [here](https://nickhudack.com/).

@@ -1,11 +1,10 @@
 ---
-date: '2020-01-10'
-title: 'Project 2'
-github: 'https://github.com/nhudack/project-two'
+date: '2017-12-01'
+title: 'Python Project'
+github: 'https://github.com/nhudack/python-project'
 external: ''
 tech:
-  - N/A
-company: 'Microsoft'
+  - Python
 showInProjects: true
 ---
 

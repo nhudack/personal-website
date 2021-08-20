@@ -1,11 +1,10 @@
 ---
-date: '2019-11-12'
-title: 'Project 3'
-github: 'https://github.com/nhudack/project-three'
+date: '2020-01-10'
+title: 'Java Project (GIS)'
+github: 'https://github.com/nhudack/java-project'
 external: ''
 tech:
-  - N/A
-company: 'Google'
+  - Java
 showInProjects: true
 ---
 
