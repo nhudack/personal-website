@@ -178,11 +178,33 @@ const Nav = ({ isHome }) => {
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <IconLogo />
+          <StyledLogo>
+              <div className="wrapper">
+                <StaticImage
+                  className="img"
+                  src="../images/logo.png"
+                  width={500}
+                  quality={95}
+                  formats={['AUTO', 'WEBP', 'AVIF']}
+                  alt="Logo"
+                />
+              </div>
+            </StyledLogo>
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <IconLogo />
+          <StyledLogo>
+              <div className="wrapper">
+                <StaticImage
+                  className="img"
+                  src="../images/logo.png"
+                  width={500}
+                  quality={95}
+                  formats={['AUTO', 'WEBP', 'AVIF']}
+                  alt="Logo"
+                />
+              </div>
+            </StyledLogo>
         </Link>
       )}
     </div>
@@ -224,18 +246,7 @@ const Nav = ({ isHome }) => {
             <TransitionGroup component={null}>
               {isMounted && (
                 <CSSTransition classNames={fadeClass} timeout={timeout}>
-                  <><StyledLogo>
-              <div className="wrapper">
-                <StaticImage
-                  className="img"
-                  src="../images/logo.png"
-                  width={500}
-                  quality={95}
-                  formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Logo"
-                />
-              </div>
-            </StyledLogo></>
+                  <>{Logo}</>
                 </CSSTransition>
               )}
             </TransitionGroup>
