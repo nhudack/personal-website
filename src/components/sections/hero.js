@@ -21,18 +21,17 @@ const StyledHeroSection = styled.section`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-
   padding: 0 calc(100% - 100vw + 150px);
 
-    @media (max-width: 1080px) {
-      padding: 0 calc(100% - 100vw + 100px);
-    }
-    @media (max-width: 768px) {
-      padding: 0 calc(100% - 100vw + 50px);
-    }
-    @media (max-width: 480px) {
-      padding: 0 calc(100% - 100vw + 25px);
-    }
+  @media (max-width: 1080px) {
+    padding: 0 calc(100% - 100vw + 100px);
+  }
+  @media (max-width: 768px) {
+    padding: 0 calc(100% - 100vw + 50px);
+  }
+  @media (max-width: 480px) {
+    padding: 0 calc(100% - 100vw + 25px);
+  }
 `;
 
 const Hero = () => {
