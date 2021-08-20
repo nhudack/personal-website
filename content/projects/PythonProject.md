@@ -8,6 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus laoreet ornare.
-
-(Note: Due to the Virginia Tech Honor Code, this repository is private; please request access via [email](mailto:nhudack@gmail.com).)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus laoreet ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in nibh eu sapien vulputate mollis sit amet nec metus.
