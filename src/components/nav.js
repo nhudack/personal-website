@@ -219,7 +219,7 @@ const Nav = ({ isHome }) => {
                   {isMounted &&
                     navLinks &&
                     navLinks.map(({ url, name }, i) => (
-                      <CSSTransition key={i} classNames={fadeDownClass} timeout={0}>
+                      <CSSTransition key={i} classNames={fadeDownClass}>
                         <li key={i} style={{ transitionDelay: `${i * 100}ms` }}>
                           <Link to={url}>{name}</Link>
                         </li>
