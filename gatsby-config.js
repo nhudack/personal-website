@@ -3,10 +3,9 @@ const config = require('./src/config');
 module.exports = {
   siteMetadata: {
     title: 'Nick Hudack',
-    description:
-      'Nick Hudack is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+    description: 'Nick Hudack is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
     siteUrl: 'https://nickhudack.com',
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    image: '/og.png',
     twitterUsername: '@nickhudack',
   },
   plugins: [
