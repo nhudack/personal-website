@@ -20,14 +20,6 @@ const StyledHeroSection = styled.section`
   align-items: center;
   min-height: 100vh;
   padding: 0;
-
-  background-image: url(${props => props.img});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 0;
-  min-width: 100vw
-  width: 100%
 `;
 
 const Hero = () => {
