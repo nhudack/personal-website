@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/nhudack/personal-website/src/images/logo.png" width="100" />
+  <img alt="Logo" src="https://github.com/nhudack/personal-website/tree/main/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
   Personal Website
