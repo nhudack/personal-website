@@ -208,7 +208,7 @@ const Nav = ({ isHome }) => {
           <>
             <TransitionGroup component={null}>
               {isMounted && (
-                <CSSTransition classNames={fadeClass}>
+                <CSSTransition classNames={fadeClass} timeout={timeout}>
                   <>{Logo}</>
                 </CSSTransition>
               )}
@@ -231,7 +231,7 @@ const Nav = ({ isHome }) => {
 
             <TransitionGroup component={null}>
               {isMounted && (
-                <CSSTransition classNames={fadeClass}>
+                <CSSTransition classNames={fadeClass} timeout={timeout}>
                   <Menu />
                 </CSSTransition>
               )}
