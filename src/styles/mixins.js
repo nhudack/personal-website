@@ -17,7 +17,7 @@ const button = css`
   &:focus,
   &:active {
     color: var(--light-navy);
-    background-color: var(--white);
+    background-color: var(--blue-tint);
     outline: none;
   }
   &:after {
@@ -85,6 +85,8 @@ const mixins = {
       opacity: 0.5;
     }
   `,
+
+  button,
 
   boxShadow: css`
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
