@@ -62,29 +62,6 @@ const StyledNav = styled.nav`
   font-family: var(--font-sans);
   counter-reset: item 0;
   z-index: 12;
-
-  .logo {
-    ${({ theme }) => theme.mixins.flexCenter};
-
-    a {
-      color: var(--blue);
-      width: 42px;
-      height: 42px;
-
-      &:hover,
-      &:focus {
-        img {
-          fill: var(--blue);
-        }
-      }
-
-      img {
-        fill: var(--white);
-        transition: var(--transition);
-        user-select: none;
-      }
-    }
-  }
 `;
 
 const StyledLogo = styled.div`
@@ -102,16 +79,11 @@ const StyledLogo = styled.div`
     &:hover,
     &:focus {
       outline: 0;
-
-      .img {
-        background-color: var(--blue);
-      }
     }
 
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      background: transparent;
       transition: var(--transition);
       user-select: none;
     }
@@ -249,9 +221,7 @@ const Nav = ({ isHome }) => {
                     navLinks &&
                     navLinks.map(({ url, name }, i) => (
                       <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
-                        <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
                           <Link to={url}>{name}</Link>
-                        </li>
                       </CSSTransition>
                     ))}
                 </TransitionGroup>
