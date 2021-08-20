@@ -34,6 +34,9 @@ const NotFoundPage = ({ location }) => {
     if (prefersReducedMotion) {
       return;
     }
+
+    const timeout = setTimeout(() => setIsMounted(true), 500);
+    return () => clearTimeout(timeout);
   }, []);
 
   const content = (
@@ -53,7 +56,7 @@ const NotFoundPage = ({ location }) => {
       ) : (
         <TransitionGroup component={null}>
           {isMounted && (
-            <CSSTransition classNames="fadeup">
+            <CSSTransition timeout={500} classNames="fadeup">
               {content}
             </CSSTransition>
           )}
