@@ -87,6 +87,36 @@ const StyledNav = styled.nav`
   }
 `;
 
+const StyledLogo = styled.div`
+  position: relative;
+  width: 42px;
+  height: 42px;
+
+  .wrapper {
+    ${({ theme }) => theme.mixins.boxShadow};
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius);
+
+    &:hover,
+    &:focus {
+      outline: 0;
+
+      .img {
+        mix-blend-mode: normal;
+      }
+    }
+
+    .img {
+      position: relative;
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      transition: var(--transition);
+    }
+  }
+`;
+
 const StyledLinks = styled.div`
   display: flex;
   align-items: center;
@@ -164,7 +194,18 @@ const Nav = ({ isHome }) => {
       <StyledNav>
         {prefersReducedMotion ? (
           <>
-            {Logo}
+            <StyledPic>
+          <div className="wrapper">
+            <StaticImage
+              className="img"
+              src="../images/me.jpg"
+              width={500}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Logo"
+            />
+          </div>
+        </StyledPic>
 
             <StyledLinks>
               <ol>
