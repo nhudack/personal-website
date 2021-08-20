@@ -53,7 +53,12 @@ const NotFoundPage = ({ location }) => {
     <Layout location={location}>
       <Helmet title="Page Not Found" />
 
-      {content}
+      {prefersReducedMotion ? (
+        <>{content}</>
+      ) : (
+        {content}
+
+      )}
     </Layout>
   );
 };
