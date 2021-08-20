@@ -5,7 +5,7 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroBackground = styled.div`
-  background-image: url(${props => props.img});
+  background-image: url(${"/hero.png"});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,6 +21,7 @@ const StyledHeroSection = styled.section`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  padding: 0;
 `;
 
 const Hero = () => {
@@ -36,7 +37,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <StyledHeroBackground img={"/hero.png"}>
+    <StyledHeroBackground>
       <StyledHeroSection ref={revealContainer}>
         <h2 className="numbered-heading">Hey, I'm</h2>
         <h2 className="big-heading">Nick Hudack</h2>
