@@ -214,11 +214,11 @@ const Nav = ({ isHome }) => {
 
             <StyledLinks>
               <ol>
-                <TransitionGroup component={null} timeout={50}>
+                <TransitionGroup component={null}>
                   {isMounted &&
                     navLinks &&
                     navLinks.map(({ url, name }, i) => (
-                      <CSSTransition key={i} classNames={fadeDownClass}>
+                      <CSSTransition key={i} classNames={fadeDownClass} timeout={50}>
                         <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
                           <Link to={url}>{name}</Link>
                         </li>
