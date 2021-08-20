@@ -14,7 +14,7 @@ const StyledHeroSection = styled.section`
   background-image: url(${props => props.img});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover !important;
   min-width: 100vh
   max-width: 100vh
 `;
