@@ -23,11 +23,11 @@ const StyledHeroSection = styled.section`
   min-height: 100vh;
 
   @media (max-width: 768px) {
-    padding: calc(100% + 100vw + 80px) 0;
+    padding: calc(100% - 100vw + 80px) 0;
   }
 
   @media (max-width: 480px) {
-    padding: calc(100% + 100vw + 60px) 0;
+    padding: calc(100% - 100vw + 60px) 0;
   }
 `;
 
