@@ -226,7 +226,18 @@ const Nav = ({ isHome }) => {
             <TransitionGroup component={null}>
               {isMounted && (
                 <CSSTransition classNames={fadeClass} timeout={timeout}>
-                  <>{Logo}</>
+                  <><StyledLogo>
+              <div className="wrapper">
+                <StaticImage
+                  className="img"
+                  src="../images/me.jpg"
+                  width={500}
+                  quality={95}
+                  formats={['AUTO', 'WEBP', 'AVIF']}
+                  alt="Logo"
+                />
+              </div>
+            </StyledLogo></>
                 </CSSTransition>
               )}
             </TransitionGroup>
