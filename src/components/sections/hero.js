@@ -21,7 +21,14 @@ const StyledHeroSection = styled.section`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 0;
+
+  @media (max-width: 768px) {
+    padding: calc(100% + 100vw + 80px) 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: calc(100% + 100vw + 60px) 0;
+  }
 `;
 
 const Hero = () => {
@@ -37,11 +44,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <StyledHeroSection ref={revealContainer}>
-      <StyledHeroBackground></StyledHeroBackground>
-      <h2 className="numbered-heading">Hey, I'm</h2>
-      <h2 className="big-heading">Nick Hudack</h2>
-    </StyledHeroSection>
+    <StyledHeroBackground>
+      <StyledHeroSection ref={revealContainer}>
+        <h2 className="numbered-heading">Hey, I'm</h2>
+        <h2 className="big-heading">Nick Hudack</h2>
+      </StyledHeroSection>
+    </StyledHeroBackground>
   );
 };
 
