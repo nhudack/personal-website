@@ -43,9 +43,10 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.3;
 
     background-image: url(${"/hero.png"});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 
     @media (max-width: 480px) {
       font-size: var(--fz-lg);
