@@ -9,6 +9,6 @@ tech:
   - NativeScript Vue
   - iOS
   - Android
-company: 'Company Name'
+company: 'Apple'
 showInProjects: false
 ---
