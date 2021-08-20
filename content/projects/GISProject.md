@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Program for indexing and accessing geographic features and information. Built for CS 3114 at Virginia Tech. For the sake of abiding by the Virginia Tech Honor Code, this repository is private. You may, however, request access via email.
+Program for indexing and accessing geographic features and information. Built for CS 3114 at Virginia Tech. [Note: Due to the Virginia Tech Honor Code, this repository is private; please request access via [email](mailto:nhudack@gmail.com).]
