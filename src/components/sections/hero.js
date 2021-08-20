@@ -12,6 +12,10 @@ const StyledHeroBackground = styled.div`
   margin: 0 0;
   min-height: 100vh;
   min-width: 100vw;
+
+  position: absolute;
+  left: 0;
+  right: 0;
 `;
 
 const StyledHeroSection = styled.section`
