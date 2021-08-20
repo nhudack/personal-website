@@ -11,7 +11,7 @@ const StyledHeroBackground = styled.div`
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
-  position: relative;
+  position: absolute;
   margin: 0 0;
   left: calc(-50vw + 50%)
 `;
@@ -20,6 +20,7 @@ const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: center;
+  max-width: 100vw;
   min-height: 100vh;
   padding: 0;
 `;
