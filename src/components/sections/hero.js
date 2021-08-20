@@ -11,7 +11,7 @@ const StyledHeroSection = styled.section`
   min-height: 100vh;
   padding: 0;
 
-  background-image: url("../../hero.png");
+  background-image: url(${props => props.img});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <StyledHeroSection ref={revealContainer}>
+    <StyledHeroSection ref={revealContainer} img={"../../hero.png"}>
       <h2 className="numbered-heading">Hey, I'm</h2>
       <h2 className="big-heading">Nick Hudack</h2>
     </StyledHeroSection>
