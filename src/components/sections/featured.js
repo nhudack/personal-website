@@ -22,7 +22,6 @@ const StyledProject = styled.li`
   grid-gap: 10px;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  padding-bottom: 0px;
 
   @media (max-width: 768px) {
     ${({ theme }) => theme.mixins.boxShadow};
