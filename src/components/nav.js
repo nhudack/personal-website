@@ -131,9 +131,14 @@ const Nav = ({ isHome }) => {
       return;
     }
 
+    const timeout = setTimeout(() => {
+      setIsMounted(true);
+    }, 0);
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
+      clearTimeout(timeout);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
