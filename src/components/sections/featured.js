@@ -28,10 +28,10 @@ const StyledProject = styled.li`
   }
 
   &:not(:last-of-type) {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 
     @media (max-width: 768px) {
-      margin-bottom: 70px;
+      margin-bottom: 50px;
     }
 
     @media (max-width: 480px) {
