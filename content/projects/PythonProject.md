@@ -1,5 +1,5 @@
 ---
-date: '2017-12-01'
+date: '2020-01-01'
 title: 'Python Project'
 github: 'https://github.com/nhudack/python-project'
 external: ''

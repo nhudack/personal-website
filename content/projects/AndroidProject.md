@@ -1,5 +1,5 @@
 ---
-date: '2019-11-12'
+date: '2020-02-02'
 title: 'Android App'
 github: 'https://github.com/nhudack/android-app'
 external: ''
@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus laoreet ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in nibh eu sapien vulputate mollis sit amet nec metus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Built for CS 3714 at Virginia Tech. For the sake of abiding by the Virginia Tech Honor Code, this repository is private. You may, however, request access via email.
