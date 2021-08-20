@@ -4,6 +4,18 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
+const StyledHeroBackground = styled.div`
+  background-image: url(${"/hero.png"});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: -100vh;
+  left: calc(-50vw + 50%)
+`;
+
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
@@ -26,6 +38,7 @@ const Hero = () => {
 
   return (
     <StyledHeroSection ref={revealContainer}>
+      <StyledHeroBackground></StyledHeroBackground>
       <h2 className="numbered-heading">Hey, I'm</h2>
       <h2 className="big-heading">Nick Hudack</h2>
     </StyledHeroSection>
