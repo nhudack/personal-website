@@ -22,13 +22,17 @@ const StyledHeroSection = styled.section`
   align-items: center;
   min-height: 100vh;
 
-  @media (max-width: 768px) {
-    padding: calc(100% - 100vw + 80px) 0;
-  }
+  padding: 0 calc(100% - 100vw + 150px);
 
-  @media (max-width: 480px) {
-    padding: calc(100% - 100vw + 60px) 0;
-  }
+    @media (max-width: 1080px) {
+      padding: 0 calc(100% - 100vw + 100px);
+    }
+    @media (max-width: 768px) {
+      padding: 0 calc(100% - 100vw + 50px);
+    }
+    @media (max-width: 480px) {
+      padding: 0 calc(100% - 100vw + 25px);
+    }
 `;
 
 const Hero = () => {
