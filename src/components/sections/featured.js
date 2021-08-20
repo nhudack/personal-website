@@ -22,13 +22,14 @@ const StyledProject = styled.li`
   grid-gap: 10px;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
+  padding-bottom: 0px;
 
   @media (max-width: 768px) {
     ${({ theme }) => theme.mixins.boxShadow};
   }
 
   &:not(:last-of-type) {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 
     @media (max-width: 768px) {
       margin-bottom: 70px;
