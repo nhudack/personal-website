@@ -8,7 +8,6 @@ import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
-import { IconLogo } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -74,12 +73,12 @@ const StyledNav = styled.nav`
 
       &:hover,
       &:focus {
-        svg {
+        img {
           fill: var(--blue);
         }
       }
 
-      svg {
+      img {
         fill: var(--white);
         transition: var(--transition);
         user-select: none;
@@ -105,13 +104,16 @@ const StyledLogo = styled.div`
       outline: 0;
 
       .img {
-        mix-blend-mode: normal;
+        background-color: var(--blue);
       }
     }
 
     .img {
       position: relative;
       border-radius: var(--border-radius);
+      background: transparent;
+      transition: var(--transition);
+      user-select: none;
     }
   }
 `;
@@ -175,36 +177,36 @@ const Nav = ({ isHome }) => {
   const fadeDownClass = isHome ? 'fadedown' : '';
 
   const Logo = (
-    <div className="logo" tabIndex="-1">
+    <div tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
           <StyledLogo>
-              <div className="wrapper">
-                <StaticImage
-                  className="img"
-                  src="../images/logo.png"
-                  width={500}
-                  quality={95}
-                  formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Logo"
-                />
-              </div>
-            </StyledLogo>
+            <div className="wrapper">
+              <StaticImage
+                className="img"
+                src="../images/logo.png"
+                width={100}
+                quality={95}
+                formats={['AUTO', 'WEBP', 'AVIF']}
+                alt="Logo"
+              />
+            </div>
+          </StyledLogo>
         </a>
       ) : (
         <Link to="/" aria-label="home">
           <StyledLogo>
-              <div className="wrapper">
-                <StaticImage
-                  className="img"
-                  src="../images/logo.png"
-                  width={500}
-                  quality={95}
-                  formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Logo"
-                />
-              </div>
-            </StyledLogo>
+            <div className="wrapper">
+              <StaticImage
+                className="img"
+                src="../images/logo.png"
+                width={100}
+                quality={95}
+                formats={['AUTO', 'WEBP', 'AVIF']}
+                alt="Logo"
+              />
+            </div>
+          </StyledLogo>
         </Link>
       )}
     </div>
@@ -215,18 +217,7 @@ const Nav = ({ isHome }) => {
       <StyledNav>
         {prefersReducedMotion ? (
           <>
-            <StyledLogo>
-              <div className="wrapper">
-                <StaticImage
-                  className="img"
-                  src="../images/logo.png"
-                  width={500}
-                  quality={95}
-                  formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Logo"
-                />
-              </div>
-            </StyledLogo>
+            {Logo}
 
             <StyledLinks>
               <ol>
