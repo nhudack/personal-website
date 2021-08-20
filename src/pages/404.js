@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Layout } from '@components';
@@ -29,7 +28,6 @@ const StyledHomeButton = styled(Link)`
 `;
 
 const NotFoundPage = ({ location }) => {
-  const [isMounted, setIsMounted] = useState(false);
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -41,19 +39,15 @@ const NotFoundPage = ({ location }) => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const content = (
-    <StyledMainContainer className="fillHeight" ref={revealContainer}>
-      <StyledTitle>404</StyledTitle>
-      <StyledSubtitle>Page Not Found</StyledSubtitle>
-      <StyledHomeButton to="/">Go Home</StyledHomeButton>
-    </StyledMainContainer>
-  );
-
   return (
     <Layout location={location}>
       <Helmet title="Page Not Found" />
 
-      {content}
+      <StyledMainContainer className="fillHeight" ref={revealContainer}>
+        <StyledTitle>404</StyledTitle>
+        <StyledSubtitle>Page Not Found</StyledSubtitle>
+        <StyledHomeButton to="/">Go Home</StyledHomeButton>
+      </StyledMainContainer>
     </Layout>
   );
 };
