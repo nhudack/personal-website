@@ -9,4 +9,4 @@ tech:
 showInProjects: false
 ---
 
-My personal website, showcasing my portfolio, resume, and social media. This website was methodically designed to provide key information about myself, as well as images and links to my various projects on GitHub.
+My personal website, showcasing my projects, resume, and social media. This website was methodically designed to provide key information about myself, as well as images and links to my various projects on GitHub.

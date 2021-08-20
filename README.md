@@ -2,10 +2,10 @@
   <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
-  nickhudack.com
+  Personal Website
 </h1>
 <p align="center">
-  Nick Hudack's personal website, <a href="https://nickhudack.com" target="_blank">nickhudack.com</a>, showcasing his portfolio, resume, and social media.</a>
+  My personal website, <a href="https://nickhudack.com" target="_blank">nickhudack.com</a>, showcasing his projects, resume, and social media. This website was methodically designed to provide key information about myself, as well as images and links to my various projects on GitHub.</a>
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/nickhudack/deploys" target="_blank">
@@ -17,12 +17,9 @@
 
 ## 🛠 Technologies
 
-- [React](https://reactjs.org/)
-- [graphql](https://graphql.org/)
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
-- [baseui](https://github.com/uber/baseweb)
-- [react-reveal](https://www.react-reveal.com/)
-- [styled-components](https://styled-components.com/)
+- JavaScript
+- React
+- Gatsby
 
 ## 🎨 Website Theme
 
@@ -35,4 +32,4 @@
 | Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| Blue           | ![#64ffda](https://via.placeholder.com/10/0066cc?text=+) `#0066cc` |
