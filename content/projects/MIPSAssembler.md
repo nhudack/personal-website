@@ -1,10 +1,11 @@
 ---
-date: '2--2021-05-05'
+date: '1--2021-05-05'
 title: 'MIPS Assembler'
 github: 'https://github.com/nhudack/mips-assembler'
 external: ''
 tech:
   - C
+  - MIPS32
 showInProjects: true
 ---
 

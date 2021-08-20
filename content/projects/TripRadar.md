@@ -1,11 +1,11 @@
 ---
-date: '1--2021-07-01'
+date: '2021-07-01'
 title: 'TripRadar'
 github: 'https://github.com/nhudack/tripradar'
 external: ''
 tech:
   - Kotlin
-showInProjects: true
+showInProjects: false
 ---
 
 Android app for viewing popular vacation spots and live details about each location. Built for CS 3714 at Virginia Tech.
