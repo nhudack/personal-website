@@ -293,11 +293,17 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)} ref={revealButton}>
-        Show {showMore ? 'Less' : 'More'}
-      </button>
+      <div></div>
     </StyledProjectsSection>
   );
 };
+
+/*
+Insert the following button in place of "<div></div>":
+
+<button className="more-button" onClick={() => setShowMore(!showMore)} ref={revealButton}>
+  Show {showMore ? 'Less' : 'More'}
+</button>
+*/
 
 export default Projects;
