@@ -25,8 +25,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :focus {
-    outline: 2px solid var(--blue);
-    outline-offset: 2px;
+    outline: none;
+    border-radius: var(--border-radius);
     box-shadow: 0 0 3pt 2pt var(--blue);
   }
 
