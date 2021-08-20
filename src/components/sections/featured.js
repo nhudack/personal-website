@@ -117,7 +117,7 @@ const StyledProject = styled.li`
 
   .project-overline {
     margin: 10px 0;
-    color: var(--green);
+    color: var(--blue);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
     font-weight: 400;
