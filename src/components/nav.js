@@ -214,17 +214,12 @@ const Nav = ({ isHome }) => {
 
             <StyledLinks>
               <ol>
-                <TransitionGroup component={null}>
-                  {isMounted &&
-                    navLinks &&
-                    navLinks.map(({ url, name }, i) => (
-                      <CSSTransition key={i} classNames={fadeClass}>
-                        <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
-                          <Link to={url}>{name}</Link>
-                        </li>
-                      </CSSTransition>
-                    ))}
-                </TransitionGroup>
+                {navLinks &&
+                  navLinks.map(({ url, name }, i) => (
+                    <li key={i}>
+                      <Link to={url}>{name}</Link>
+                    </li>
+                  ))}
               </ol>
             </StyledLinks>
 
