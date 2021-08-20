@@ -2,11 +2,11 @@ import { css } from 'styled-components';
 
 const button = css`
   color: var(--white);
-  background-color: var(--light-navy);
-  border: 1px solid var(--light-navy);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
   border-radius: var(--border-radius);
   font-size: var(--fz-lg);
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -16,7 +16,7 @@ const button = css`
   &:hover,
   &:focus,
   &:active {
-    color: var(--light-navy);
+    color: var(--blue);
     background-color: var(--blue-tint);
     outline: none;
   }
