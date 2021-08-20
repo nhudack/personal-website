@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { navDelay } from '@utils';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -35,9 +34,6 @@ const NotFoundPage = ({ location }) => {
     if (prefersReducedMotion) {
       return;
     }
-
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
   }, []);
 
   const content = (
@@ -57,7 +53,7 @@ const NotFoundPage = ({ location }) => {
       ) : (
         <TransitionGroup component={null}>
           {isMounted && (
-            <CSSTransition timeout={500} classNames="fadeup">
+            <CSSTransition classNames="fadeup">
               {content}
             </CSSTransition>
           )}
