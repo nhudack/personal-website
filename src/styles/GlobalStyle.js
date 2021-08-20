@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    width: 100%;
+    width: 1920px;
   }
 
   *,
