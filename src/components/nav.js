@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
@@ -195,17 +196,17 @@ const Nav = ({ isHome }) => {
         {prefersReducedMotion ? (
           <>
             <StyledPic>
-          <div className="wrapper">
-            <StaticImage
-              className="img"
-              src="../images/me.jpg"
-              width={500}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Logo"
-            />
-          </div>
-        </StyledPic>
+              <div className="wrapper">
+                <StaticImage
+                  className="img"
+                  src="../images/me.jpg"
+                  width={500}
+                  quality={95}
+                  formats={['AUTO', 'WEBP', 'AVIF']}
+                  alt="Logo"
+                />
+              </div>
+            </StyledPic>
 
             <StyledLinks>
               <ol>
