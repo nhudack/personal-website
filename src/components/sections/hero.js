@@ -4,24 +4,17 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
-const StyledHeroBackground = styled.div`
-  background-image: url(${"/hero.png"});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-width: 100vw;
-  min-height: 100vh;
-  position: relative;
-  margin: 0 0;
-  left: calc(-50vw + 50%)
-`;
-
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   padding: 0;
+
+  background-image: url(${"/hero.png"});
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 `;
 
 const Hero = () => {
