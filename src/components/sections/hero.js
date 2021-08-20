@@ -11,12 +11,12 @@ const StyledHeroSection = styled.section`
   min-height: 100vh;
   padding: 0;
 
-  background: url(${props => props.img});
+  background-image: url(${props => props.img});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 0;
   min-width: 100vh
-  max-width: 100vh
 `;
 
 const Hero = () => {
