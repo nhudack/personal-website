@@ -20,9 +20,18 @@ const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: center;
-  max-width: 100vw;
   min-height: 100vh;
   padding: 0;
+
+  max-width: 1000px;
+
+    @media (max-width: 768px) {
+      padding: 80px 0;
+    }
+
+    @media (max-width: 480px) {
+      padding: 60px 0;
+    }
 `;
 
 const Hero = () => {
@@ -38,11 +47,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <StyledHeroSection ref={revealContainer}>
-      <StyledHeroBackground img={"/hero.png"}></StyledHeroBackground>
-      <h2 className="numbered-heading">Hey, I'm</h2>
-      <h2 className="big-heading">Nick Hudack</h2>
-    </StyledHeroSection>
+    <StyledHeroBackground img={"/hero.png"}>
+      <StyledHeroSection ref={revealContainer}>
+        <h2 className="numbered-heading">Hey, I'm</h2>
+        <h2 className="big-heading">Nick Hudack</h2>
+      </StyledHeroSection>
+    </StyledHeroBackground>
   );
 };
 
