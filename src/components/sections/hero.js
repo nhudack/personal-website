@@ -37,12 +37,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <StyledHeroBackground>
-      <StyledHeroSection ref={revealContainer}>
-        <h2 className="numbered-heading">Hey, I'm</h2>
-        <h2 className="big-heading">Nick Hudack</h2>
-      </StyledHeroSection>
-    </StyledHeroBackground>
+    <StyledHeroSection ref={revealContainer}>
+      <h2 className="numbered-heading">Hey, I'm</h2>
+      <h2 className="big-heading">Nick Hudack</h2>
+    </StyledHeroSection>
   );
 };
 
