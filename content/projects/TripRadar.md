@@ -1,7 +1,7 @@
 ---
-date: '2020-02-02'
-title: 'Android App'
-github: 'https://github.com/nhudack/android-app'
+date: '1--2021-07-01'
+title: 'TripRadar'
+github: 'https://github.com/nhudack/tripradar'
 external: ''
 tech:
   - Kotlin
