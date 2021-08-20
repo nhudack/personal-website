@@ -16,6 +16,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Nick Hudack',
+        short_name: 'Nick Hudack',
+        start_url: '/',
+        background_color: config.colors.white,
+        theme_color: config.colors.navy,
+        icon: 'src/images/logo.png',
+      },
+    },
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
