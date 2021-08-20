@@ -12,7 +12,7 @@ const StyledHeroBackground = styled.div`
   min-width: 100vw;
   min-height: 100vh;
   position: relative;
-  margin-bottom: -100vh;
+  margin-bottom: 0 0;
   left: calc(-50vw + 50%)
 `;
 
