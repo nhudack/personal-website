@@ -5,7 +5,6 @@ github: 'https://github.com/nhudack/mips-assembler'
 external: ''
 tech:
   - C
-  - MIPS32
 showInProjects: true
 ---
 
