@@ -1,11 +1,11 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
+  <img alt="Logo" src="https://github.com/nhudack/personal-website/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
   Personal Website
 </h1>
 <p align="center">
-  My personal website, <a href="https://nickhudack.com" target="_blank">nickhudack.com</a>, showcasing his projects, resume, and social media. This website was methodically designed to provide key information about myself, as well as images and links to my various projects on GitHub.</a>
+  My personal website, <a href="https://nickhudack.com" target="_blank">nickhudack.com</a>, showcasing my projects, resume, and social media. This website was methodically designed to provide key information about myself, as well as images and links to my various projects on GitHub.</a>
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/nickhudack/deploys" target="_blank">
@@ -21,7 +21,7 @@
 - React
 - Gatsby
 
-## 🎨 Website Theme
+## 🎨 Theme
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
