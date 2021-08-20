@@ -214,7 +214,7 @@ const Nav = ({ isHome }) => {
 
             <StyledLinks>
               <ol>
-                <TransitionGroup component={null} timeout={timeout+50}>
+                <TransitionGroup component={null} timeout={50}>
                   {isMounted &&
                     navLinks &&
                     navLinks.map(({ url, name }, i) => (
