@@ -15,7 +15,7 @@ const StyledHeroSection = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vh
+  width: 1920px
 `;
 
 const Hero = () => {
