@@ -14,11 +14,11 @@ const StyledProjectsSection = styled.section`
   margin-top: -120px;
 
   @media (max-width: 768px) {
-    margin-top: -20px;
+    margin-top: -40px;
   }
 
   @media (max-width: 480px) {
-    margin-top: -10px;
+    margin-top: -20px;
   }
 
   h2 {
