@@ -195,7 +195,7 @@ const Nav = ({ isHome }) => {
       <StyledNav>
         {prefersReducedMotion ? (
           <>
-            <StyledPic>
+            <StyledLogo>
               <div className="wrapper">
                 <StaticImage
                   className="img"
@@ -206,7 +206,7 @@ const Nav = ({ isHome }) => {
                   alt="Logo"
                 />
               </div>
-            </StyledPic>
+            </StyledLogo>
 
             <StyledLinks>
               <ol>
