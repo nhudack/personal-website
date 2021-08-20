@@ -345,10 +345,6 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  #logo {
-    color: var(--blue);
-  }
-
   .overline {
     color: var(--blue);
     font-family: var(--font-mono);
