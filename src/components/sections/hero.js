@@ -4,7 +4,7 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
-const StyledHeroBackground = styled.body`
+const StyledHeroBackground = styled.div`
   background-image: url(${props => props.img});
   background-position: center;
   background-repeat: no-repeat;
@@ -13,6 +13,10 @@ const StyledHeroBackground = styled.body`
   min-height: 100vh;
   min-width: 100vw
   width: 100%
+
+  position:absolute;
+    left:0;
+    right:0;
 `;
 
 const StyledHeroSection = styled.section`
