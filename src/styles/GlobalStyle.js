@@ -25,8 +25,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :focus {
-    outline: 2px dashed var(--blue);
+    outline: 2px solid var(--blue);
     outline-offset: 3px;
+    border-radius: var(--border-radius);
   }
 
   body {
@@ -283,7 +284,7 @@ const GlobalStyle = createGlobalStyle`
         padding-left: 30px;
         margin-bottom: 10px;
         &:before {
-          content: '▹';
+          content: '•';
           position: absolute;
           left: 0;
           color: var(--blue);
