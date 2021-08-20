@@ -78,9 +78,9 @@ const StyledLogo = styled.div`
     &:hover,
     &:focus {
       outline: 0;
-      
+
       .img {
-        margin-top: -10px;
+        margin-top: -5px;
       }
     }
 
