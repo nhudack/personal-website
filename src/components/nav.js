@@ -112,8 +112,6 @@ const StyledLogo = styled.div`
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      transition: var(--transition);
     }
   }
 `;
