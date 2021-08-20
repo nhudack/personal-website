@@ -132,7 +132,7 @@ const StyledProject = styled.li`
     }
 
     @media (max-width: 768px) {
-      color: var(--white);
+      color: var(--navy);
 
       a {
         position: static;
@@ -163,6 +163,7 @@ const StyledProject = styled.li`
 
     @media (max-width: 768px) {
       padding: 20px 0;
+      color: var(--dark-slate);
       background-color: transparent;
       box-shadow: none;
 
