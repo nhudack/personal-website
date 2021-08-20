@@ -7,7 +7,6 @@ external: 'https://nickhudack.com'
 tech:
   - JS
   - CSS
-showInProjects: false
 ---
 
 My personal website, showcasing my portfolio, resume, and social media.
