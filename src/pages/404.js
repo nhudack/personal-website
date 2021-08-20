@@ -5,6 +5,8 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Layout } from '@components';
+import { srConfig } from '@config';
+import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledMainContainer = styled.main`
@@ -28,6 +30,7 @@ const StyledHomeButton = styled(Link)`
 
 const NotFoundPage = ({ location }) => {
   const [isMounted, setIsMounted] = useState(false);
+  const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -35,12 +38,11 @@ const NotFoundPage = ({ location }) => {
       return;
     }
 
-    const timeout = setTimeout(() => setIsMounted(true), 500);
-    return () => clearTimeout(timeout);
+    sr.reveal(revealContainer.current, srConfig());
   }, []);
 
   const content = (
-    <StyledMainContainer className="fillHeight">
+    <StyledMainContainer className="fillHeight" ref={revealContainer}>
       <StyledTitle>404</StyledTitle>
       <StyledSubtitle>Page Not Found</StyledSubtitle>
       <StyledHomeButton to="/">Go Home</StyledHomeButton>
@@ -51,17 +53,7 @@ const NotFoundPage = ({ location }) => {
     <Layout location={location}>
       <Helmet title="Page Not Found" />
 
-      {prefersReducedMotion ? (
-        <>{content}</>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted && (
-            <CSSTransition timeout={500} classNames="fadeup">
-              {content}
-            </CSSTransition>
-          )}
-        </TransitionGroup>
-      )}
+      {content}
     </Layout>
   );
 };
