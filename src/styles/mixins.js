@@ -2,11 +2,11 @@ import { css } from 'styled-components';
 
 const button = css`
   color: var(--white);
-  background-color: var(--blue);
-  border: 1px solid var(--blue);
+  background-color: var(--light-navy);
+  border: 1px solid var(--light-navy);
   border-radius: var(--border-radius);
   font-size: var(--fz-lg);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -18,6 +18,7 @@ const button = css`
   &:active {
     color: var(--blue);
     background-color: var(--blue-tint);
+    border: 1px solid var(--blue);
     outline: none;
   }
   &:after {
