@@ -11,7 +11,7 @@ const StyledHeroBackground = styled.div`
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
-  position: absolute;
+  position: relative;
   margin: 0 0;
   left: calc(-50vw + 50%)
 `;
@@ -38,12 +38,11 @@ const Hero = () => {
   }, []);
 
   return (
-    <StyledHeroBackground img={"/hero.png"}>
-      <StyledHeroSection ref={revealContainer}>
-        <h2 className="numbered-heading">Hey, I'm</h2>
-        <h2 className="big-heading">Nick Hudack</h2>
-      </StyledHeroSection>
-    </StyledHeroBackground>
+    <StyledHeroSection ref={revealContainer}>
+      <StyledHeroBackground img={"/hero.png"}></StyledHeroBackground>
+      <h2 className="numbered-heading">Hey, I'm</h2>
+      <h2 className="big-heading">Nick Hudack</h2>
+    </StyledHeroSection>
   );
 };
 
