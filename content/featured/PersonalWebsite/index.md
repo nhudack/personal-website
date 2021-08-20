@@ -1,8 +1,8 @@
 ---
-date: '1'
+date: '2021-08-03'
 title: 'Personal Website'
 cover: './image.png'
-github: 'https://github.com/nhudack/personal-website'
+github: ''
 external: 'https://nickhudack.com'
 tech:
   - JavaScript
