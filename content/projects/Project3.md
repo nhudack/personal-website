@@ -1,7 +1,7 @@
 ---
 date: '2019-11-12'
 title: 'Project 3'
-github: ''
+github: 'https://github.com/nhudack/project-three'
 external: ''
 tech:
   - N/A
