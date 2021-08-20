@@ -182,7 +182,6 @@ const Projects = () => {
   `);
 
   const [showMore, setShowMore] = useState(false);
-  const revealTitle = useRef(null);
   const revealProjects = useRef([]);
   const revealButton = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -192,7 +191,6 @@ const Projects = () => {
       return;
     }
 
-    sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealButton.current, srConfig());
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
@@ -256,8 +254,6 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Projects</h2>
-
       <ul className="projects-grid">
         {prefersReducedMotion ? (
           <>
