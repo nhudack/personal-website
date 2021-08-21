@@ -48,7 +48,7 @@ module.exports = {
   srConfig: (delay = 200, viewFactor = 0.25) => ({
     origin: 'bottom',
     distance: '20px',
-    duration: 500,
+    duration: 600,
     delay,
     rotate: { x: 0, y: 0, z: 0 },
     opacity: 0,
@@ -64,7 +64,7 @@ module.exports = {
   srConfigNav: (delay = 200, viewFactor = 0.25) => ({
     origin: 'top',
     distance: '20px',
-    duration: 500,
+    duration: 600,
     delay,
     rotate: { x: 0, y: 0, z: 0 },
     opacity: 0,
@@ -74,6 +74,6 @@ module.exports = {
     reset: false,
     useDelay: 'always',
     viewFactor,
-    viewOffset: { top: 0, right: 0, bottom: 99999, left: 0 },
+    viewOffset: { top: -99999, right: 0, bottom: -99999, left: 0 },
   }),
 };
