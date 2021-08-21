@@ -128,6 +128,10 @@ const Nav = ({ isHome }) => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
+  const handleScroll = () => {
+    setScrolledToTop(window.pageYOffset < 50);
+  };
+
   useEffect(() => {
     if (prefersReducedMotion) {
       return;
