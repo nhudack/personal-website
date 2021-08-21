@@ -133,8 +133,6 @@ const Nav = ({ isHome }) => {
       return;
     }
 
-    sr.reveal(revealContainer.current, srConfigNav());
-
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -180,7 +178,7 @@ const Nav = ({ isHome }) => {
 
   return (
     <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
-      <StyledNav ref={revealContainer}>
+      <StyledNav>
         {Logo}
 
         <StyledLinks>
