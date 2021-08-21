@@ -32,4 +32,5 @@
 | Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Blue           | ![#64ffda](https://via.placeholder.com/10/0066cc?text=+) `#0066cc` |
+| Blue           | ![#0066cc](https://via.placeholder.com/10/0066cc?text=+) `#0066cc` |
+| Light Blue     | ![#cfe9fe](https://via.placeholder.com/10/cfe9fe?text=+) `#cfe9fe` |
