@@ -3,7 +3,7 @@ const config = require('./src/config');
 module.exports = {
   siteMetadata: {
     title: 'Nick Hudack',
-    description: 'Nick Hudack is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+    description: 'Nick Hudack is a passionate and motivated software developer. He is currently enrolled in the computer science program at Virginia Tech and has plans to graduate in May 2022.',
     siteUrl: 'https://nickhudack.com',
     image: '/og.png',
     twitterUsername: '@nickhudack',
