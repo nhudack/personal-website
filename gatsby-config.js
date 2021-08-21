@@ -24,7 +24,6 @@ module.exports = {
         start_url: '/',
         background_color: config.colors.white,
         theme_color: config.colors.navy,
-        // display: 'minimal-ui',
         icon: 'src/images/logo.png',
       },
     },
