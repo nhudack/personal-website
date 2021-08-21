@@ -234,15 +234,9 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            {external ? (
-              <a href={external} target="_blank" rel="noreferrer">
-                {title}
-              </a>
-            ) : (
-              <a href={github} target="_blank" rel="noreferrer">
-                {title}
-              </a>
-            )}
+            <a href={external ? external : github} target="_blank" rel="noreferrer">
+              {title}
+            </a>
           </h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />

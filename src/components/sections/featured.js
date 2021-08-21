@@ -334,7 +334,7 @@ const Featured = () => {
                     <p className="project-overline">Featured Project</p>
 
                     <h3 className="project-title">
-                      <a href={external}>{title}</a>
+                      <a href={external ? external : github}>{title}</a>
                     </h3>
 
                     <div
