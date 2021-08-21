@@ -2,7 +2,7 @@
 date: '1--2021-05-05'
 title: 'MIPS Assembler'
 github: 'https://github.com/nhudack/mips-assembler'
-external: 'https://apple.com'
+external: ''
 tech:
   - C
 showInProjects: true
