@@ -334,7 +334,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:focus,
     &:active {
-      background-color: var(--blue-tint);
+      background-color: var(--white);
       color: var(--blue);
       top: 0;
       left: 0;
@@ -342,6 +342,10 @@ const GlobalStyle = createGlobalStyle`
       height: auto;
       overflow: auto;
       z-index: 99;
+
+      &:after {
+        background-color: var(--blue-tint);
+      }
     }
   }
 
