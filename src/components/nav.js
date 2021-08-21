@@ -73,8 +73,6 @@ const StyledLogo = styled.div`
     display: block;
     position: relative;
     width: 100%;
-    background-color: var(--navy-tint);
-    border-radius: var(--border-radius);
 
     &:hover,
     &:focus {
@@ -87,7 +85,6 @@ const StyledLogo = styled.div`
 
     .img {
       position: relative;
-      border-radius: var(--border-radius);
       transition: var(--transition);
       user-select: none;
     }
