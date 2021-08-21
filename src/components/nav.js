@@ -145,7 +145,7 @@ const Nav = ({ isHome }) => {
     <div tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <StyledLogo>
+          <StyledLogo ref={revealContainer}>
             <div className="wrapper">
               <StaticImage
                 className="img"
@@ -160,7 +160,7 @@ const Nav = ({ isHome }) => {
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <StyledLogo>
+          <StyledLogo ref={revealContainer}>
             <div className="wrapper">
               <StaticImage
                 className="img"
@@ -212,7 +212,7 @@ const Nav = ({ isHome }) => {
               </ol>
             </StyledLinks>
 
-            <Menu />
+            <Menu ref={revealContainer} />
           </>
         )}
       </StyledNav>
