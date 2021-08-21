@@ -152,7 +152,7 @@ const Nav = ({ isHome }) => {
   }, []);
 
   const Logo = (
-    <div tabIndex="-1" ref={revealContainer}>
+    <div tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
           <StyledLogo>
@@ -189,10 +189,10 @@ const Nav = ({ isHome }) => {
 
   return (
     <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
-      <StyledNav>
+      <StyledNav ref={revealContainer}>
         {Logo}
 
-        <StyledLinks ref={revealContainer}>
+        <StyledLinks>
           <ol>
             {navLinks &&
               navLinks.map(({ url, name }, i) => (
