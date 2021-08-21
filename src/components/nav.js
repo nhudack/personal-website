@@ -188,8 +188,8 @@ const Nav = ({ isHome }) => {
   );
 
   return (
-    <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
-      <StyledNav ref={revealContainer}>
+    <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop} ref={revealContainer}>
+      <StyledNav>
         {Logo}
 
         <StyledLinks>
