@@ -110,7 +110,7 @@ const StyledSidebar = styled.aside`
     ${({ theme }) => theme.mixins.flexBetween};
     width: 100%;
     flex-direction: column;
-    color: var(--lightest-slate);
+    color: var(--white);
     font-family: var(--font-sans);
     text-align: center;
   }
