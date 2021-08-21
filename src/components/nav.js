@@ -73,6 +73,7 @@ const StyledLogo = styled.div`
     display: block;
     position: relative;
     width: 100%;
+    border-radius: var(--border-radius);
 
     &:hover,
     &:focus {
@@ -85,6 +86,7 @@ const StyledLogo = styled.div`
 
     .img {
       position: relative;
+      border-radius: var(--border-radius);
       transition: var(--transition);
       user-select: none;
     }
@@ -208,7 +210,7 @@ const Nav = ({ isHome }) => {
           <>
             <TransitionGroup component={null}>
               {isMounted && (
-                <CSSTransition classNames={fadeClass}>
+                <CSSTransition classNames={fadeDownClass}>
                   <>{Logo}</>
                 </CSSTransition>
               )}
