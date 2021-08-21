@@ -122,6 +122,7 @@ const StyledLinks = styled.div`
 `;
 
 const Nav = ({ isHome }) => {
+  const [isMounted, setIsMounted] = useState(!isHome);
   const scrollDirection = useScrollDirection('down');
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const revealContainer = useRef(null);
