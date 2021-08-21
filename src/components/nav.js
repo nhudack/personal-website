@@ -147,9 +147,6 @@ const Nav = ({ isHome }) => {
     };
   }, []);
 
-  const fadeClass = isHome ? 'fade' : '';
-  const fadeDownClass = isHome ? 'fadedown' : '';
-
   const Logo = (
     <div tabIndex="-1">
       {isHome ? (
@@ -189,58 +186,20 @@ const Nav = ({ isHome }) => {
   return (
     <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
       <StyledNav>
-        {prefersReducedMotion ? (
-          <>
-            {Logo}
+        {Logo}
 
-            <StyledLinks>
-              <ol>
-                {navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <li key={i}>
-                      <Link to={url}>{name}</Link>
-                    </li>
-                  ))}
-              </ol>
-            </StyledLinks>
+        <StyledLinks>
+          <ol>
+            {navLinks &&
+              navLinks.map(({ url, name }, i) => (
+                <li key={i}>
+                  <Link to={url}>{name}</Link>
+                </li>
+              ))}
+          </ol>
+        </StyledLinks>
 
-            <Menu />
-          </>
-        ) : (
-          <>
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeDownClass}>
-                  <>{Logo}</>
-                </CSSTransition>
-              )}
-            </TransitionGroup>
-
-            <StyledLinks>
-              <ol>
-                <TransitionGroup component={null}>
-                  {isMounted &&
-                    navLinks &&
-                    navLinks.map(({ url, name }, i) => (
-                      <CSSTransition key={i} classNames={fadeDownClass}>
-                        <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
-                          <Link to={url}>{name}</Link>
-                        </li>
-                      </CSSTransition>
-                    ))}
-                </TransitionGroup>
-              </ol>
-            </StyledLinks>
-
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeClass}>
-                  <Menu />
-                </CSSTransition>
-              )}
-            </TransitionGroup>
-          </>
-        )}
+        <Menu />
       </StyledNav>
     </StyledHeader>
   );
