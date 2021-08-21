@@ -123,7 +123,6 @@ const StyledLinks = styled.div`
 `;
 
 const Nav = ({ isHome }) => {
-  const [isMounted, setIsMounted] = useState(!isHome);
   const scrollDirection = useScrollDirection('down');
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const revealContainer = useRef(null);
@@ -145,7 +144,7 @@ const Nav = ({ isHome }) => {
     <div tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <StyledLogo ref={revealContainer}>
+          <StyledLogo>
             <div className="wrapper">
               <StaticImage
                 className="img"
@@ -160,7 +159,7 @@ const Nav = ({ isHome }) => {
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <StyledLogo ref={revealContainer}>
+          <StyledLogo>
             <div className="wrapper">
               <StaticImage
                 className="img"
@@ -179,42 +178,21 @@ const Nav = ({ isHome }) => {
 
   return (
     <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
-      <StyledNav>
-        {prefersReducedMotion ? (
-          <>
-            {Logo}
+      <StyledNav ref={revealContainer}>
+        {Logo}
 
-            <StyledLinks ref={revealContainer}>
-              <ol>
-                {navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <li key={i}>
-                      <Link to={url}>{name}</Link>
-                    </li>
-                  ))}
-              </ol>
-            </StyledLinks>
+        <StyledLinks>
+          <ol>
+            {navLinks &&
+              navLinks.map(({ url, name }, i) => (
+                <li key={i}>
+                  <Link to={url}>{name}</Link>
+                </li>
+              ))}
+          </ol>
+        </StyledLinks>
 
-            <Menu />
-          </>
-        ) : (
-          <>
-            {Logo}
-
-            <StyledLinks ref={revealContainer}>
-              <ol>
-                {navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <li key={i}>
-                      <Link to={url}>{name}</Link>
-                    </li>
-                  ))}
-              </ol>
-            </StyledLinks>
-
-            <Menu ref={revealContainer} />
-          </>
-        )}
+        <Menu />
       </StyledNav>
     </StyledHeader>
   );
