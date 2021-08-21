@@ -334,8 +334,8 @@ const GlobalStyle = createGlobalStyle`
 
     &:focus,
     &:active {
-      background-color: var(--blue);
-      color: var(--navy);
+      background-color: var(--blue-tint);
+      color: var(--blue);
       top: 0;
       left: 0;
       width: auto;
