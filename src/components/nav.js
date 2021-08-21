@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
 import { navLinks } from '@config';
 import { srConfigNav } from '@config';
@@ -133,9 +132,14 @@ const Nav = ({ isHome }) => {
       return;
     }
 
+    const timeout = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
+      clearTimeout(timeout);
       window.removeEventListener('scroll', handleScroll);
     }
   }, []);
