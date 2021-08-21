@@ -91,12 +91,12 @@ const StyledSidebar = styled.aside`
   @media (max-width: 768px) {
     ${({ theme }) => theme.mixins.flexCenter};
     position: fixed;
-    top: calc(-50vh + 50%);
-    bottom: calc(50vh - 50%);
+    top: calc(-10vh);
+    bottom: 0;
     right: calc(-50vw + 50%);
     padding: 50px 10px;
     width: min(75vw, 400px);
-    height: 100vh;
+    height: 110vh;
     outline: 0;
     background-color: var(--light-navy);
     box-shadow: -10px 0px 30px -15px var(--navy-shadow);
