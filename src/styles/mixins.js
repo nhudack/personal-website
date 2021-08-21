@@ -49,7 +49,7 @@ const mixins = {
     &:hover,
     &:active,
     &:focus {
-      color: var(--blue);
+      color: var(--light-blue);
       outline: 0;
     }
   `,
