@@ -208,37 +208,20 @@ const Nav = ({ isHome }) => {
           </>
         ) : (
           <>
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeClass}>
-                  <>{Logo}</>
-                </CSSTransition>
-              )}
-            </TransitionGroup>
+            {Logo}
 
             <StyledLinks>
               <ol>
-                <TransitionGroup component={null}>
-                  {isMounted &&
-                    navLinks &&
-                    navLinks.map(({ url, name }, i) => (
-                      <CSSTransition key={i} classNames={fadeDownClass}>
-                        <li key={i} style={{ transitionDelay: `${500 + (isHome ? i * 100 : 0)}ms` }}>
-                          <Link to={url}>{name}</Link>
-                        </li>
-                      </CSSTransition>
-                    ))}
-                </TransitionGroup>
+                {navLinks &&
+                  navLinks.map(({ url, name }, i) => (
+                    <li key={i}>
+                      <Link to={url}>{name}</Link>
+                    </li>
+                  ))}
               </ol>
             </StyledLinks>
 
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeClass}>
-                  <Menu />
-                </CSSTransition>
-              )}
-            </TransitionGroup>
+            <Menu />
           </>
         )}
       </StyledNav>
