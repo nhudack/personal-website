@@ -152,7 +152,7 @@ const Nav = ({ isHome }) => {
   }, []);
 
   const Logo = (
-    <div tabIndex="-1">
+    <div tabIndex="-1" ref={revealContainer}>
       {isHome ? (
         <a href="/" aria-label="home">
           <StyledLogo>
@@ -192,7 +192,7 @@ const Nav = ({ isHome }) => {
       <StyledNav>
         {Logo}
 
-        <StyledLinks>
+        <StyledLinks ref={revealContainer}>
           <ol>
             {navLinks &&
               navLinks.map(({ url, name }, i) => (
