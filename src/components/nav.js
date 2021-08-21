@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
 import { navLinks } from '@config';
+import { srConfigNav } from '@config';
+import sr from '@utils/sr';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 
@@ -124,6 +125,7 @@ const Nav = ({ isHome }) => {
   const [isMounted, setIsMounted] = useState(!isHome);
   const scrollDirection = useScrollDirection('down');
   const [scrolledToTop, setScrolledToTop] = useState(true);
+  const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const handleScroll = () => {
@@ -135,20 +137,8 @@ const Nav = ({ isHome }) => {
       return;
     }
 
-    const timeout = setTimeout(() => {
-      setIsMounted(true);
-    }, 0);
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      clearTimeout(timeout);
-      window.removeEventListener('scroll', handleScroll);
-    };
+    sr.reveal(revealContainer.current, srConfig());
   }, []);
-
-  const fadeClass = isHome ? 'fade' : '';
-  const fadeDownClass = isHome ? 'fadedown' : '';
 
   const Logo = (
     <div tabIndex="-1">
@@ -193,7 +183,7 @@ const Nav = ({ isHome }) => {
           <>
             {Logo}
 
-            <StyledLinks>
+            <StyledLinks ref={revealContainer}>
               <ol>
                 {navLinks &&
                   navLinks.map(({ url, name }, i) => (
@@ -208,37 +198,20 @@ const Nav = ({ isHome }) => {
           </>
         ) : (
           <>
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeDownClass}>
-                  <>{Logo}</>
-                </CSSTransition>
-              )}
-            </TransitionGroup>
+            {Logo}
 
-            <StyledLinks>
+            <StyledLinks ref={revealContainer}>
               <ol>
-                <TransitionGroup component={null}>
-                  {isMounted &&
-                    navLinks &&
-                    navLinks.map(({ url, name }, i) => (
-                      <CSSTransition classNames={fadeDownClass}>
-                        <li key={i}>
-                          <Link to={url}>{name}</Link>
-                        </li>
-                      </CSSTransition>
-                    ))}
-                </TransitionGroup>
+                {navLinks &&
+                  navLinks.map(({ url, name }, i) => (
+                    <li key={i}>
+                      <Link to={url}>{name}</Link>
+                    </li>
+                  ))}
               </ol>
             </StyledLinks>
 
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeDownClass}>
-                  <Menu />
-                </CSSTransition>
-              )}
-            </TransitionGroup>
+            <Menu />
           </>
         )}
       </StyledNav>
