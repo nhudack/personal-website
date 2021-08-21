@@ -25,7 +25,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :focus {
-    outline: none
+    outline: none;
+    border: 5px solid var(--blue);
     border-radius: var(--border-radius);
     box-shadow: 0 0 3pt 2pt var(--blue);
   }
@@ -334,7 +335,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:focus,
     &:active {
-      background-color: var(--white);
+      background-color: var(--light-blue);
       color: var(--blue);
       top: 0;
       left: 0;
@@ -342,18 +343,6 @@ const GlobalStyle = createGlobalStyle`
       height: auto;
       overflow: auto;
       z-index: 99;
-    }
-
-    &:after {
-      position: absolute;
-      height: 100%;
-  	  width: 100%;
-      background-color: var(--blue-tint);
-      top: 0;
-  	  left: 0;
-  	  display: block;
-  	  content: "";
-      z-index: 100;
     }
   }
 

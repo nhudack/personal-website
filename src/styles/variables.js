@@ -6,14 +6,15 @@ const variables = css`
     --navy: #0a192f;
     --light-navy: #112240;
     --lightest-navy: #233554;
-    --navy-tint: rgba(10, 25, 47, 0.85);
     --navy-shadow: rgba(2, 12, 27, 0.7);
+    --navy-tint: rgba(10, 25, 47, 0.85);
     --dark-slate: #495670;
     --slate: #8892b0;
     --light-slate: #a8b2d1;
     --lightest-slate: #ccd6f6;
     --white: #e6f1ff;
     --blue: #03a9f4;
+    --light-blue: #cfe9fe;
     --blue-tint: rgba(3, 169, 244, 0.1);
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
