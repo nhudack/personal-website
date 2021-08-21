@@ -73,6 +73,7 @@ const StyledLogo = styled.div`
     display: block;
     position: relative;
     width: 100%;
+    background-color: var(--navy-tint);
     border-radius: var(--border-radius);
 
     &:hover,
@@ -208,20 +209,37 @@ const Nav = ({ isHome }) => {
           </>
         ) : (
           <>
-            {Logo}
+            <TransitionGroup component={null}>
+              {isMounted && (
+                <CSSTransition classNames={fadeClass}>
+                  <>{Logo}</>
+                </CSSTransition>
+              )}
+            </TransitionGroup>
 
             <StyledLinks>
               <ol>
-                {navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <li key={i}>
-                      <Link to={url}>{name}</Link>
-                    </li>
-                  ))}
+                <TransitionGroup component={null}>
+                  {isMounted &&
+                    navLinks &&
+                    navLinks.map(({ url, name }, i) => (
+                      <CSSTransition key={i} classNames={fadeDownClass}>
+                        <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
+                          <Link to={url}>{name}</Link>
+                        </li>
+                      </CSSTransition>
+                    ))}
+                </TransitionGroup>
               </ol>
             </StyledLinks>
 
-            <Menu />
+            <TransitionGroup component={null}>
+              {isMounted && (
+                <CSSTransition classNames={fadeClass}>
+                  <Menu />
+                </CSSTransition>
+              )}
+            </TransitionGroup>
           </>
         )}
       </StyledNav>
