@@ -137,6 +137,8 @@ const Nav = ({ isHome }) => {
       return;
     }
 
+    sr.reveal(revealContainer.current, srConfigNav());
+
     const timeout = setTimeout(() => {
       setIsMounted(true);
     }, 100);
@@ -187,7 +189,7 @@ const Nav = ({ isHome }) => {
 
   return (
     <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
-      <StyledNav>
+      <StyledNav ref={revealContainer}>
         {Logo}
 
         <StyledLinks>
