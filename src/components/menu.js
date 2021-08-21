@@ -91,7 +91,8 @@ const StyledSidebar = styled.aside`
   @media (max-width: 768px) {
     ${({ theme }) => theme.mixins.flexCenter};
     position: fixed;
-    top: calc(-100vh + 100%);
+    top: calc(-50vh + 50%);
+    bottom: calc(50vh - 50%);
     right: calc(-50vw + 50%);
     padding: 50px 10px;
     width: min(75vw, 400px);
