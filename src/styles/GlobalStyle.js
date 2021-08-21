@@ -353,6 +353,7 @@ const GlobalStyle = createGlobalStyle`
   	  left: 0;
   	  display: block;
   	  content: "";
+      z-index: 100;
     }
   }
 
