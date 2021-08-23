@@ -7,7 +7,7 @@ import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
-const StyledJobsSection = styled.section`
+const StyledExperienceSection = styled.section`
   max-width: 700px;
 
   .inner {
@@ -164,7 +164,7 @@ const StyledTabPanel = styled.div`
   }
 `;
 
-const Jobs = () => {
+const Experience = () => {
   const data = useStaticQuery(graphql`
     query {
       jobs: allMarkdownRemark(
@@ -243,7 +243,7 @@ const Jobs = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
+    <StyledExperienceSection id="jobs" ref={revealContainer}>
       <h2 className="numbered-heading">Experience</h2>
 
       <div className="inner">
@@ -303,8 +303,8 @@ const Jobs = () => {
             })}
         </StyledTabPanels>
       </div>
-    </StyledJobsSection>
+    </StyledExperienceSection>
   );
 };
 
-export default Jobs;
+export default Experience;
