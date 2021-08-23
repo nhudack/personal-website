@@ -19,6 +19,7 @@
 
 - [Gatsby](https://www.gatsbyjs.com)
 - [React](https://reactjs.org)
+- [GraphQL](https://graphql.org)
 - [webpack](https://webpack.js.org)
 - [styled-components](https://styled-components.com)
 - [ScrollReveal](https://scrollrevealjs.org)
