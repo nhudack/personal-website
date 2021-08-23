@@ -17,20 +17,12 @@
 
 ## 🛠 Technologies
 
-- JavaScript
-- React
-- Gatsby
+- [Gatsby](https://www.gatsbyjs.com)
+- [React](https://reactjs.org)
+- [webpack](https://webpack.js.org)
+- [styled-components](https://styled-components.com)
+- [ScrollReveal](https://scrollrevealjs.org)
 
-## 🎨 Theme
+## 📝 Attribution
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Blue           | ![#0066cc](https://via.placeholder.com/10/0066cc?text=+) `#0066cc` |
-| Light Blue     | ![#cfe9fe](https://via.placeholder.com/10/cfe9fe?text=+) `#cfe9fe` |
+Although the entirety of this website has been personally tailored by me, I drew heavy inspiration from Brittany Chiang. You should take a look at her [website](https://brittanychiang.com) and [source code](https://github.com/bchiang7/v4).
