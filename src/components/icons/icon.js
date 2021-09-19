@@ -2,21 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   IconAppStore,
+  IconEmail,
   IconExternal,
   IconFolder,
   IconGitHub,
   IconGitHubLink,
-  IconInstagram,
   IconLinkedIn,
-  IconEmail,
   IconPlayStore,
-  IconTwitter,
+  IconResume,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
   switch (name) {
     case 'AppStore':
       return <IconAppStore />;
+    case 'Email':
+      return <IconEmail />;
     case 'External':
       return <IconExternal />;
     case 'Folder':
@@ -25,16 +26,12 @@ const Icon = ({ name }) => {
       return <IconGitHub />;
     case 'GitHubLink':
       return <IconGitHubLink />;
-    case 'Instagram':
-      return <IconInstagram />;
     case 'LinkedIn':
       return <IconLinkedIn />;
-    case 'Email':
-      return <IconEmail />;
     case 'PlayStore':
       return <IconPlayStore />;
-    case 'Twitter':
-      return <IconTwitter />;
+    case 'Resume':
+      return <IconResume />;
     default:
       return <IconExternal />;
   }

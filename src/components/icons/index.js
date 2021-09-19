@@ -1,12 +1,10 @@
 export { default as IconAppStore } from './appstore';
-export { default as IconBookmark } from './bookmark';
+export { default as IconEmail } from './email';
 export { default as IconExternal } from './external';
 export { default as IconFolder } from './folder';
 export { default as Icon } from './icon';
 export { default as IconGitHub } from './github';
 export { default as IconGitHubLink } from './githublink';
-export { default as IconInstagram } from './instagram';
 export { default as IconLinkedIn } from './linkedin';
-export { default as IconEmail } from './email';
 export { default as IconPlayStore } from './playstore';
-export { default as IconTwitter } from './twitter';
+export { default as IconResume } from './resume';
