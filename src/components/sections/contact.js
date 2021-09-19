@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { srConfig, socialMedia, email } from '@config';
+import { srConfig, socialMedia, } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 import { Icon } from '@components/icons';
@@ -39,10 +39,10 @@ const StyledSocialLinks = styled.div`
     list-style: none;
 
     a {
-      padding: 10px;
+      padding: 8px;
       svg {
-        width: 32px;
-        height: 32px;
+        width: 48px;
+        height: 48px;
       }
     }
   }

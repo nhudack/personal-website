@@ -10,14 +10,6 @@ module.exports = {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/nickhudack',
     },
-    /*{
-      name: 'Instagram',
-      url: 'https://www.instagram.com/nhudack',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/NickHudack',
-    },*/
     {
       name: 'Email',
       url: 'mailto:nhudack@gmail.com',
