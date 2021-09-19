@@ -36,7 +36,7 @@ const StyledSocialLinks = styled.div`
   width: 100%;
   max-width: 270px;
   margin: 10px auto 10px;
-  color: var(--dark-slate);
+  color: var(--light-navy);
 
   ul {
     ${({ theme }) => theme.mixins.flexBetween};
