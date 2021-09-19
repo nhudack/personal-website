@@ -41,8 +41,8 @@ const StyledSocialLinks = styled.div`
     a {
       padding: 10px;
       svg {
-        width: 48px;
-        height: 48px;
+        width: 32px;
+        height: 32px;
       }
     }
   }
