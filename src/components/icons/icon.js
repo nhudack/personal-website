@@ -34,8 +34,8 @@ const Icon = ({ name }) => {
       return <IconGitHub />;
     case 'Instagram':
       return <IconInstagram />;
-    case 'Linkedin':
-      return <IconLinkedin />;
+    case 'LinkedIn':
+      return <IconLinkedIn />;
     case 'Mail':
       return <IconMail />;
     case 'PlayStore':
