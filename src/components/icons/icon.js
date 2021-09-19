@@ -9,7 +9,7 @@ import {
   IconFork,
   IconGitHub,
   IconInstagram,
-  IconLinkedin,
+  IconLinkedIn,
   IconMail,
   IconPlayStore,
   IconStar,

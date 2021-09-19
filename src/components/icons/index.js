@@ -7,7 +7,7 @@ export { default as IconFork } from './fork';
 export { default as Icon } from './icon';
 export { default as IconGitHub } from './github';
 export { default as IconInstagram } from './instagram';
-export { default as IconLinkedin } from './linkedin';
+export { default as IconLinkedIn } from './linkedin';
 export { default as IconMail } from './mail';
 export { default as IconPlayStore } from './playstore';
 export { default as IconStar } from './star';
