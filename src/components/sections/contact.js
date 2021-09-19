@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { srConfig, email } from '@config';
+import { srConfig, socialMedia, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 import { Icon } from '@components/icons';
-import { socialMedia } from '@config';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -47,8 +46,8 @@ const StyledSocialLinks = styled.div`
     a {
       padding: 10px;
       svg {
-        width: 24px;
-        height: 24px;
+        width: 60px;
+        height: 60px;
       }
     }
   }

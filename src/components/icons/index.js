@@ -8,5 +8,4 @@ export { default as IconInstagram } from './instagram';
 export { default as IconLinkedIn } from './linkedin';
 export { default as IconMail } from './mail';
 export { default as IconPlayStore } from './playstore';
-export { default as IconStar } from './star';
 export { default as IconTwitter } from './twitter';
