@@ -23,11 +23,6 @@ const StyledContactSection = styled.section`
     ${({ theme }) => theme.mixins.button};
     margin: 10px;
   }
-
-  .email-link {
-    ${({ theme }) => theme.mixins.button};
-    margin: 10px;
-  }
 `;
 
 const StyledSocialLinks = styled.div`
@@ -95,10 +90,6 @@ const Contact = () => {
       </StyledSocialLinks>
 
       {ResumeLink}
-
-      <a className="email-link" href={`mailto:${email}`}>
-        Email
-      </a>
     </StyledContactSection>
   );
 };

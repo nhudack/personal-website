@@ -19,7 +19,7 @@ module.exports = {
       url: 'https://twitter.com/NickHudack',
     },*/
     {
-      name: 'Mail',
+      name: 'Email',
       url: 'mailto:nhudack@gmail.com',
     },
   ],
