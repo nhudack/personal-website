@@ -18,6 +18,10 @@ module.exports = {
       name: 'Twitter',
       url: 'https://twitter.com/NickHudack',
     },
+    {
+      name: 'Mail',
+      url: 'mailto:nhudack@gmail.com',
+    },
   ],
 
   navLinks: [
