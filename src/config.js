@@ -2,7 +2,7 @@ module.exports = {
   email: 'nhudack@gmail.com',
 
   socialMedia: [
-    {
+    /*{
       name: 'GitHub',
       url: 'https://github.com/nhudack',
     },
@@ -17,7 +17,7 @@ module.exports = {
     {
       name: 'Twitter',
       url: 'https://twitter.com/NickHudack',
-    },
+    },*/
     {
       name: 'Mail',
       url: 'mailto:nhudack@gmail.com',
