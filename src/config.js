@@ -5,12 +5,12 @@ module.exports = {
     /*{
       name: 'GitHub',
       url: 'https://github.com/nhudack',
-    },
+    },*/
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/nickhudack',
     },
-    {
+    /*{
       name: 'Instagram',
       url: 'https://www.instagram.com/nhudack',
     },
