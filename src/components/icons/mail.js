@@ -16,4 +16,4 @@ const IconMail = () => (
   </svg>
 );
 
-export default IconGitHub;
+export default IconMail;
