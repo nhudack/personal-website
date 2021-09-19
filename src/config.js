@@ -2,10 +2,10 @@ module.exports = {
   email: 'nhudack@gmail.com',
 
   socialMedia: [
-    /*{
+    {
       name: 'GitHub',
       url: 'https://github.com/nhudack',
-    },*/
+    },
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/nickhudack',
