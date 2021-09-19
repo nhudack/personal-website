@@ -5,6 +5,8 @@ const IconResume = () => (
     xmlns="http://www.w3.org/2000/svg"
     role="img"
     viewBox="0 0 60 60"
+    width="80"
+	  height="80"
     stroke="none"
     className="feather feather-resume">
     <title>Resume</title>
