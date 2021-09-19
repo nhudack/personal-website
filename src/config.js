@@ -9,12 +9,12 @@ module.exports = {
       url: 'https://www.linkedin.com/in/nickhudack',
     },
     {
-      name: 'Resume',
-      url: '/resume.pdf',
-    },
-    {
       name: 'Email',
       url: 'mailto:nhudack@gmail.com',
+    },
+    {
+      name: 'Resume',
+      url: '/resume.pdf',
     },
   ],
 
