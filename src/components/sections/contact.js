@@ -81,7 +81,7 @@ const Contact = () => {
           {socialMedia &&
             socialMedia.map(({ name, url }, i) => (
               <li key={i}>
-                <a href={url} aria-label={name}>
+                <a href={url} aria-label={name} target="_blank">
                   <Icon name={name} />
                 </a>
               </li>
