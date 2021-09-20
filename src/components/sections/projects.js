@@ -221,7 +221,7 @@ const Projects = () => {
             </div>
             <div className="project-links">
               {github && (
-                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
+                <a href={github} aria-label="GitHub" target="_blank" rel="noreferrer">
                   <Icon name="GitHubLink" />
                 </a>
               )}

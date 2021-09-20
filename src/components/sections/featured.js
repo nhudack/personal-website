@@ -352,7 +352,7 @@ const Featured = () => {
 
                     <div className="project-links">
                       {github && (
-                        <a href={github} aria-label="GitHub Link">
+                        <a href={github} aria-label="GitHub">
                           <Icon name="GitHubLink" />
                         </a>
                       )}
