@@ -55,10 +55,6 @@ const Layout = ({ children, location }) => {
         <ThemeProvider theme={theme}>
           <GlobalStyle />
 
-          <a className="skip-to-content" href="#content">
-            Skip to Content
-          </a>
-
           <StyledContent>
             <Nav isHome={isHome} />
 
