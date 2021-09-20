@@ -220,7 +220,7 @@ const StyledProject = styled.li`
         svg {
           width: 22px;
           height: 22px;
-          margin-top: -4px;
+          margin-top: -2px;
         }
       }
 
