@@ -5,16 +5,16 @@ const IconResume = () => (
     xmlns="http://www.w3.org/2000/svg"
     role="img"
     viewBox="0 0 60 60"
-    width="80"
-	  height="80"
     stroke="none"
     className="feather feather-resume">
     <title>Resume</title>
-    <path d="M22.766,0.001C10.194,0.001,0,10.193,0,22.766s10.193,22.765,22.766,22.765c12.574,0,22.766-10.192,22.766-22.765
-		S35.34,0.001,22.766,0.001z M22.766,6.808c4.16,0,7.531,3.372,7.531,7.53c0,4.159-3.371,7.53-7.531,7.53
-		c-4.158,0-7.529-3.371-7.529-7.53C15.237,10.18,18.608,6.808,22.766,6.808z M22.761,39.579c-4.149,0-7.949-1.511-10.88-4.012
-		c-0.714-0.609-1.126-1.502-1.126-2.439c0-4.217,3.413-7.592,7.631-7.592h8.762c4.219,0,7.619,3.375,7.619,7.592
-		c0,0.938-0.41,1.829-1.125,2.438C30.712,38.068,26.911,39.579,22.761,39.579z" fill="currentColor"></path>
+    <path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="currentColor"></path>
+    <rect stroke="currentColor" rx="1" id="svg_2" height="39" width="30" y="10.5" x="15" fill="var(--white)"/>
+    <line id="svg_22" y2="17" x2="35" y1="17" x1="25" stroke-width="3" stroke="currentColor" fill="none"/>
+    <line id="svg_23" y2="24" x2="39" y1="24" x1="21" stroke-width="2" stroke="currentColor" fill="none"/>
+    <line id="svg_31" y2="30" x2="39" y1="30" x1="21" stroke-width="2" stroke="currentColor" fill="none"/>
+    <line id="svg_32" y2="36" x2="39" y1="36" x1="21" stroke-width="2" stroke="currentColor" fill="none"/>
+    <line id="svg_33" y2="42" x2="39" y1="42" x1="21" stroke-width="2" stroke="currentColor" fill="none"/>
   </svg>
 );
 
