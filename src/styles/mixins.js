@@ -71,7 +71,6 @@ const mixins = {
       }
       & > * {
         color: var(--blue) !important;
-        transition: var(--transition);
       }
     }
     &:after {
@@ -82,8 +81,7 @@ const mixins = {
       position: relative;
       bottom: 0.37em;
       background-color: var(--blue);
-      transition: var(--transition);
-      opacity: 0.5;
+      opacity: 0.6;
     }
   `,
 
