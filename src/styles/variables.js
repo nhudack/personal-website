@@ -13,7 +13,6 @@ const variables = css`
     --light-slate: #a8b2d1;
     --lightest-slate: #ccd6f6;
     --white: #e6f1ff;
-    --dark-blue: #3297FD;
     --blue: #03a9f4;
     --light-blue: #cfe9fe;
     --blue-tint: rgba(3, 169, 244, 0.1);

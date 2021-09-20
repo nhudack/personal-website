@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
     color: var(--white);
   }
 
