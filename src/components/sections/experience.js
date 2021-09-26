@@ -243,7 +243,7 @@ const Experience = () => {
   };
 
   return (
-    <StyledExperienceSection id="jobs" ref={revealContainer}>
+    <StyledExperienceSection id="experience" ref={revealContainer}>
       <h2 className="numbered-heading">Experience</h2>
 
       <div className="inner">
