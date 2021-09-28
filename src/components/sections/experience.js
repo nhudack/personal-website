@@ -75,7 +75,7 @@ const StyledTabButton = styled.button`
   padding: 0 20px 2px;
   border-left: 2px solid var(--lightest-navy);
   background-color: transparent;
-  color: ${({ isActive }) => (isActive ? 'var(--blue)' : 'var(--slate)')};
+  color: ${({ isActive }) => (isActive ? 'var(--blue)' : 'var(--dark-slate)')};
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   text-align: left;
@@ -95,7 +95,7 @@ const StyledTabButton = styled.button`
 
   &:hover,
   &:focus {
-    background-color: var(--light-navy);
+    background-color: var(--light-blue);
   }
 `;
 
@@ -158,7 +158,7 @@ const StyledTabPanel = styled.div`
 
   .range {
     margin-bottom: 25px;
-    color: var(--light-slate);
+    color: var(--dark-slate);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
   }
