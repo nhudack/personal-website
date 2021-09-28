@@ -244,7 +244,7 @@ const Experience = () => {
 
   return (
     <StyledExperienceSection id="experience" ref={revealContainer}>
-      <h2 className="numbered-heading">Experience</h2>
+      <h2 className="numbered-heading">My Experience</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>

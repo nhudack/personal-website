@@ -1,7 +1,7 @@
 ---
 date: '2018-12'
 title: 'Cashier'
-company: 'Wegmans Food Markets Inc.'
+company: 'Wegmans'
 location: 'Leesburg, VA'
 range: 'December 2018 - Present'
 url: 'https://www.wegmans.com'
