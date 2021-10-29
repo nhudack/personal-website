@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       name: 'Resume',
-      url: '/resume.pdf',
+      url: '/Resume_NickHudack.pdf',
     },
     {
       name: 'Email',

@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Thread pool implementation with a customizable number of threads and a work-stealing approach, written in C. Repository is private due to Virginia Tech Honor Code.
+Multithreaded program for executing work on a customizable number of worker threads with a work-stealing approach. Repository is private due to Virginia Tech Honor Code.
