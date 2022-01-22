@@ -95,7 +95,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Java', 'JavaScript', 'C#', 'C', 'C++'];
+  const skills = ['Java', 'Python', 'JavaScript', 'C#', 'C', 'C++', 'Kotlin'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -119,12 +119,12 @@ const About = () => {
           <div>
             <p>
               My name is Nick Hudack and I am a passionate and motivated software developer. I
-              am currently enrolled in the computer science program at Virginia Tech and have
-              plans to graduate in May 2022.
+              am currently pursuing a Bachelor of Science in Computer Science at Virginia Tech
+              and will be graduating in May 2022.
             </p>
 
             <p>
-              Thus far, I have the most experience working with:
+              The programming languages that I have the most experience working with are:
             </p>
           </div>
 
