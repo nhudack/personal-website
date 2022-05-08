@@ -95,7 +95,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Java', 'Python', 'JavaScript', 'C#', 'C', 'C++', 'Kotlin'];
+  const skills = ['Java', 'Python', 'C#', 'C', 'C++', 'Swift', 'Kotlin', 'JavaScript'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -106,7 +106,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/nick-hudack.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
