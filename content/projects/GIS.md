@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Program for indexing geographic features and information. Implements hash table and point-region quadtree data structures. Repository is private due to Virginia Tech Honor Code.
+Program for indexing geographic features and information. Implements hash table and point-region quadtree data structures. Made at Virginia Tech.

@@ -9,4 +9,4 @@ tech:
 showInProjects: true
 ---
 
-Spaceship shooter video game with enemy ships, power-ups, scoreboard, and more. Repository is private due to Virginia Tech Honor Code.
+Spaceship shooter video game with enemy ships, power-ups, scoreboard, and more. Made at Virginia Tech.

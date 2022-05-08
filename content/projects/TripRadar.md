@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Android app for viewing popular vacation spots and live data, such as weather and flight prices, for each location. Repository is private due to Virginia Tech Honor Code.
+Android app for viewing popular vacation spots and live data, such as weather and flight prices, for each location. Made at Virginia Tech.

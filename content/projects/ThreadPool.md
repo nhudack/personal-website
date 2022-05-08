@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Multithreaded program for executing work on a customizable number of worker threads with a work-stealing approach. Repository is private due to Virginia Tech Honor Code.
+Multithreaded program for executing work on a customizable number of worker threads with a work-stealing approach. Made at Virginia Tech.
