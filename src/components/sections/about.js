@@ -63,7 +63,7 @@ const StyledPic = styled.div`
     display: block;
     position: relative;
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: 50%;
 
     .img {
       position: relative;
