@@ -37,8 +37,8 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--white);
-    color: var(--slate);
+    background-color: var(--dark-navy);
+    color: var(--white);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);
     line-height: 1.3;
