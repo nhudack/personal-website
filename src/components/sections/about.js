@@ -7,7 +7,6 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
-  color: var(--dark-slate);
 
   .inner {
     display: grid;
