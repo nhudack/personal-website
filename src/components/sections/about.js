@@ -67,7 +67,7 @@ const StyledPic = styled.div`
 
     .img {
       position: relative;
-      border-radius: var(--border-radius);
+      border-radius: 50%;
       transition: var(--transition);
     }
   }
