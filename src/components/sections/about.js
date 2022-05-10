@@ -65,19 +65,9 @@ const StyledPic = styled.div`
     width: 100%;
     border-radius: var(--border-radius);
 
-    &:hover,
-    &:focus {
-      outline: 0;
-
-      .img {
-        mix-blend-mode: normal;
-      }
-    }
-
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
       transition: var(--transition);
     }
   }
