@@ -128,7 +128,7 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     margin: 0 0 10px 0;
     font-weight: 600;
-    color: var(--light-slate);
+    color: var(--white);
     line-height: 1.1;
   }
 
@@ -160,7 +160,7 @@ const GlobalStyle = createGlobalStyle`
       width: 300px;
       height: 1px;
       margin-right: 20px;
-      background-color: var(--light-navy);
+      background-color: var(--white);
 
       @media (max-width: 1080px) {
         width: 200px;

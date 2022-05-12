@@ -9,7 +9,6 @@ const StyledContactSection = styled.section`
   max-width: 600px;
   margin: 0 auto 100px;
   text-align: center;
-  color: var(--dark-slate);
 
   @media (max-width: 768px) {
     margin: 0 auto 50px;
