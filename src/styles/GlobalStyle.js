@@ -160,7 +160,6 @@ const GlobalStyle = createGlobalStyle`
       width: 300px;
       height: 1px;
       margin-right: 20px;
-      background-color: var(--white);
 
       @media (max-width: 1080px) {
         width: 200px;
@@ -178,7 +177,6 @@ const GlobalStyle = createGlobalStyle`
       width: 300px;
       height: 1px;
       margin-left: 20px;
-      background-color: var(--light-navy);
 
       @media (max-width: 1080px) {
         width: 200px;
