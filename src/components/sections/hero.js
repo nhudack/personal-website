@@ -14,7 +14,7 @@ const StyledHeroBackground = styled.div`
   position: relative;
   margin-bottom: 0 0;
   left: calc(-50vw + 50%);
-  opacity: 0.5
+  opacity: 0.5;
 `;
 
 const StyledHeroSection = styled.section`
@@ -23,6 +23,7 @@ const StyledHeroSection = styled.section`
   align-items: center;
   min-height: 100vh;
   padding: 0 calc(100% - 100vw + 150px);
+  opacity: 1;
 
   @media (max-width: 1080px) {
     padding: 0 calc(100% - 100vw + 100px);
