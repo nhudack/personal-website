@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import Background from "../../images/hero.jpg";
 
 const StyledHeroBackground = styled.div`
-  background-image: url("../../../images/hero.jpg");
+  background-image: url(${Background});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
