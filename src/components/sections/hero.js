@@ -13,8 +13,8 @@ const StyledHeroBackground = styled.div`
   min-height: 100vh;
   position: relative;
   margin-bottom: 0 0;
-  left: calc(-50vw + 50%)
-  opacity: 0.5;
+  left: calc(-50vw + 50%);
+  opacity: 0.5
 `;
 
 const StyledHeroSection = styled.section`
