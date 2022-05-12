@@ -5,7 +5,7 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroBackground = styled.div`
-  background-image: url(${"../../images/hero.jpg"});
+  background-image: url("../../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
